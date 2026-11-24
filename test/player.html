@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta httpequiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Straight Outta Naples · reccos player test</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    
+  <link rel="icon" href="/favicon.ico"><style>[stylesheet-group="0"] { }
+html { text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body { margin: 0px; }
+input::-webkit-search-cancel-button, input::-webkit-search-decoration, input::-webkit-search-results-button, input::-webkit-search-results-decoration { display: none; }
+[stylesheet-group="1"] { }
+.css-g5y9jx { align-content: flex-start; align-items: stretch; background-color: rgba(0, 0, 0, 0); border: 0px solid black; box-sizing: border-box; display: flex; flex-basis: auto; flex-direction: column; flex-shrink: 0; list-style: none; margin: 0px; min-height: 0px; min-width: 0px; padding: 0px; position: relative; text-decoration: none; z-index: 0; }
+.css-9pa8cd { inset: 0px; height: 100%; opacity: 0; position: absolute; width: 100%; z-index: -1; }
+.css-146c3p1 { background-color: rgba(0, 0, 0, 0); border: 0px solid black; box-sizing: border-box; color: rgb(0, 0, 0); display: inline; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; list-style: none; margin: 0px; padding: 0px; position: relative; text-align: start; text-decoration: none; white-space: pre-wrap; overflow-wrap: break-word; }
+.css-1jxf684 { background-color: rgba(0, 0, 0, 0); border: 0px solid black; box-sizing: border-box; color: inherit; display: inline; font: inherit; list-style: none; margin: 0px; padding: 0px; position: relative; text-align: inherit; text-decoration: none; white-space: inherit; overflow-wrap: break-word; }
+.css-11aywtz { appearance: none; background-color: rgba(0, 0, 0, 0); border-radius: 0px; border: 0px solid black; box-sizing: border-box; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0px; padding: 0px; resize: none; }
+[stylesheet-group="2"] { }
+.r-xoduu5 { display: inline-flex; }
+.r-13awgt0 { flex: 1 1 0%; }
+.r-fx7oqy { border-color: rgb(0, 0, 255); }
+.r-rs99b7 { border-width: 1px; }
+.r-60ke3l { border-color: rgb(0, 128, 0); }
+.r-d045u9 { border-width: 2px; }
+.r-4a18lf { border-color: rgb(255, 0, 0); }
+.r-1udh08x { overflow: hidden; }
+.r-krxsd3 { display: -webkit-box; }
+.r-1qsk4np { overflow: clip; }
+.r-1jkafct { border-radius: 2px; }
+.r-edyy15 { padding: 8px; }
+.r-1awa8pu { border-color: rgb(101, 119, 134); }
+.r-1phboty { border-style: solid; }
+.r-1jyn79y { border-color: rgb(0, 150, 136); }
+.r-9x6qib { border-color: rgb(204, 214, 221); }
+.r-1d4xg89 { border-color: rgb(170, 184, 194); }
+.r-crgep1 { margin: 0px; }
+.r-t60dpp { padding: 0px; }
+.r-ywje51 { margin: auto; }
+.r-1j16mh1 { border-radius: 100%; }
+.r-6t2glc { border-radius: 40px; }
+.r-1dzdj1l { border-radius: 10px; }
+.r-1bq2mok { margin: 3px; }
+.r-1uu6nss { padding: 5px; }
+.r-1sp51qo { padding: 10px; }
+.r-1rvyss1 { border-color: rgba(255, 255, 255, 0.2); }
+.r-z2wwpe { border-radius: 4px; }
+.r-d23pfw { padding: 24px; }
+.r-1f0042m { border-radius: 5px; }
+.r-wg31gx { border-color: rgb(49, 53, 56); }
+.r-1q9bdsx { border-radius: 12px; }
+.r-1xfd6ze { border-radius: 8px; }
+.r-1pcd2l5 { padding: 20px; }
+.r-11mg6pl { border-color: rgb(255, 255, 255); }
+.r-s88bda { display: contents; }
+.r-bztko3 { overflow: visible; }
+[stylesheet-group="2.1"] { }
+.r-n7gxbd { padding-left: 4px; padding-right: 4px; }
+.r-ytbthy { padding-bottom: 10px; padding-top: 10px; }
+.r-cxgwc0 { padding-left: 24px; padding-right: 24px; }
+.r-is05cd { padding-left: 8px; padding-right: 8px; }
+.r-n5f61p { margin-bottom: 3px; margin-top: 3px; }
+.r-jdiy1a { margin-left: 11px; margin-right: 11px; }
+.r-1e084wi { padding-left: 0px; padding-right: 0px; }
+.r-184id4b { margin-bottom: 12px; margin-top: 12px; }
+.r-jusfrs { margin-left: 12px; margin-right: 12px; }
+.r-1rsorjc { padding-left: 36px; padding-right: 36px; }
+.r-17q4wm6 { margin-left: 5px; margin-right: 5px; }
+.r-1yd117h { padding-bottom: 7px; padding-top: 7px; }
+.r-1ntr0p { padding-left: 5px; padding-right: 5px; }
+.r-1d7mnkm { padding-bottom: 15px; padding-top: 15px; }
+.r-11f147o { padding-bottom: 8px; padding-top: 8px; }
+.r-3o4zer { padding-left: 12px; padding-right: 12px; }
+.r-w7s2jr { padding-bottom: 16px; padding-top: 16px; }
+.r-f8sm7e { margin-left: auto; margin-right: auto; }
+.r-ugi1tw { padding-left: 5%; padding-right: 5%; }
+.r-u9wvl5 { padding-left: 20px; padding-right: 20px; }
+.r-1mmae3n { padding-bottom: 12px; padding-top: 12px; }
+.r-11gswi8 { padding-left: 3px; padding-right: 3px; }
+[stylesheet-group="2.2"] { }
+.r-10s2tm5 { left: 0%; }
+.r-dqe1q { right: 0%; }
+.r-rci37q { left: 100%; }
+.r-16o8guy { right: 100%; }
+.r-1e97lx8 { margin-right: 3px; }
+.r-1sqnqi2 { margin-left: 3px; }
+.r-1lhn9r { margin-left: -14.5px; }
+.r-1g4tz6n { margin-right: -14.5px; }
+.r-vpmibe { right: -3px; }
+.r-c59us2 { left: -3px; }
+.r-1vl2501 { padding-right: 24px; }
+.r-1euzeng { padding-left: 24px; }
+.r-w67my2 { padding-left: 16px; }
+.r-1h31txp { padding-right: 16px; }
+.r-1cwvpvk { margin-left: 12px; }
+.r-1a11zyx { margin-right: 12px; }
+.r-uhung1 { margin-left: 10px; }
+.r-9mo606 { margin-right: 10px; }
+.r-wizibn { margin-left: 5px; }
+.r-qb41rp { margin-right: 5px; }
+[stylesheet-group="3"] { }
+.r-1p0dtai { bottom: 0px; }
+.r-1d2f490 { left: 0px; }
+.r-u8s1d { position: absolute; }
+.r-zchlnj { right: 0px; }
+.r-ipm5af { top: 0px; }
+.r-105ug2t { pointer-events: auto !important; }
+.r-12vffkv > * { pointer-events: auto; }
+.r-12vffkv { pointer-events: none !important; }
+.r-ah5dr5 > * { pointer-events: none; }
+.r-ah5dr5 { pointer-events: auto !important; }
+.r-633pao > * { pointer-events: none; }
+.r-633pao { pointer-events: none !important; }
+.r-11yh6sk { overflow-x: hidden; }
+.r-buy8e9 { overflow-y: hidden; }
+.r-19z077z { touch-action: none; }
+.r-2eszeu::-webkit-scrollbar { display: none; }
+.r-2eszeu { scrollbar-width: none; }
+.r-150rngu { }
+.r-eqz5dr { flex-direction: column; }
+.r-16y2uox { flex-grow: 1; }
+.r-1wbh5a2 { flex-shrink: 1; }
+.r-1rnoaur { overflow-y: auto; }
+.r-agouwx { transform: translateZ(0px); }
+.r-18u37iz { flex-direction: row; }
+.r-lltvgl { overflow-x: auto; }
+.r-1777fci { justify-content: center; }
+.r-gtdqiz { position: sticky; }
+.r-mhe3cw { z-index: 10; }
+.r-mfh4gg { scroll-snap-type: x mandatory; }
+.r-1ocf4r9 { scroll-snap-type: y mandatory; }
+.r-cpa5s6 { scroll-snap-align: start; }
+.r-1euycsn { flex-direction: row-reverse; }
+.r-1d5kdc7 { flex-direction: column-reverse; }
+.r-173mzie { transform: scaleY(-1); }
+.r-10v3vxq { transform: scaleX(-1); }
+.r-19wmn03 { width: 20px; }
+.r-u92y06 { background-color: rgb(255, 165, 0); }
+.r-1mlwlqe { flex-basis: auto; }
+.r-417010 { z-index: 0; }
+.r-1niwhzg { background-color: rgba(0, 0, 0, 0); }
+.r-vvn4in { background-position: center center; }
+.r-u6sd8q { background-repeat: no-repeat; }
+.r-4gszlv { background-size: cover; }
+.r-1pi2tsx { height: 100%; }
+.r-13qz1uu { width: 100%; }
+.r-1wyyakw { z-index: -1; }
+.r-1sxrcry { background-size: auto; }
+.r-ehq7j7 { background-size: contain; }
+.r-1mrlafo { background-position: 0px center; }
+.r-17leim2 { background-repeat: repeat; }
+.r-x3cy2q { background-size: 100% 100%; }
+.r-dnmrzs { max-width: 100%; }
+.r-1udbk01 { text-overflow: ellipsis; }
+.r-3s2u2q { white-space: nowrap; }
+.r-1iln25a { overflow-wrap: normal; }
+.r-8akbws { -webkit-box-orient: vertical; }
+.r-lrvibr { user-select: none; }
+.r-1xnzce8 { user-select: text; }
+.r-1loqt21 { cursor: pointer; }
+.r-1awozwy { align-items: center; }
+.r-11j9u27 { visibility: hidden; }
+.r-17bb2tj { animation-duration: 0.75s; }
+.r-1muvv40 { animation-iteration-count: infinite; }
+.r-1yef0xd { animation-name: r-11cv4x; }
+@-webkit-keyframes r-11cv4x { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes r-11cv4x { 
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.r-1ldzwu0 { animation-timing-function: linear; }
+.r-1abnn5w { animation-play-state: paused; }
+.r-z80fyv { height: 20px; }
+.r-1r8g8re { height: 36px; }
+.r-1acpoxo { width: 36px; }
+.r-eafdt9 { transition-duration: 0.15s; }
+.r-1i6wzkk { transition-property: opacity; }
+.r-1otgn73 { touch-action: manipulation; }
+.r-14sbq61 { background-color: rgb(33, 150, 243); }
+.r-jwli3a { color: rgb(255, 255, 255); }
+.r-majxgm { font-weight: 500; }
+.r-fdjqy7 { text-align: left; }
+.r-1ff274t { text-align: right; }
+.r-q4m81j { text-align: center; }
+.r-tsynxw { text-transform: uppercase; }
+.r-11mpjr4 { background-color: rgb(223, 223, 223); }
+.r-c68hjy { color: rgb(161, 161, 161); }
+.r-10ptun7 { height: 16px; }
+.r-1janqcz { width: 16px; }
+.r-7q8q6z { cursor: default; }
+.r-1ei5mc7 { cursor: inherit; }
+.r-14lw9ot { background-color: rgb(255, 255, 255); }
+.r-11udlyb { background-color: rgb(0, 150, 136); }
+.r-rs94m5 { background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgMSAxIgogICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICA8cGF0aAogICAgIGQ9Ik0gMC4wNDAzODA1OSwwLjYyNjc3NjcgMC4xNDY0NDY2MSwwLjUyMDcxMDY4IDAuNDI5Mjg5MzIsMC44MDM1NTMzOSAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IE0gMC4yMTcxNTcyOSwwLjgwMzU1MzM5IDAuODUzNTUzMzksMC4xNjcxNTcyOSAwLjk1OTYxOTQxLDAuMjczMjIzMyAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IgogICAgIGlkPSJyZWN0Mzc4MCIKICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIiAvPgo8L3N2Zz4K"); }
+.r-dkge59 { background-color: rgb(170, 184, 194); }
+.r-30o5oe { appearance: none; }
+.r-1xcajam { position: fixed; }
+.r-sfbmgh { z-index: 9999; }
+.r-9daxd3 { animation-duration: 250ms; }
+.r-leqjx2 { animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+.r-s62m2j { animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); }
+.r-xx3c9p { animation-name: r-imtty0; }
+@-webkit-keyframes r-imtty0 { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes r-imtty0 { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.r-6dt33c { opacity: 1; }
+.r-g3mlsw { animation-name: r-t2lo5v; }
+@-webkit-keyframes r-t2lo5v { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes r-t2lo5v { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.r-orgf3d { opacity: 0; }
+.r-1qulhi1 { animation-name: r-1pzkwqh; }
+@-webkit-keyframes r-1pzkwqh { 
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0%); }
+}
+@keyframes r-1pzkwqh { 
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0%); }
+}
+.r-ghxds0 { transform: translateY(0%); }
+.r-13aq9py { animation-name: r-1iq689l; }
+@-webkit-keyframes r-1iq689l { 
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(100%); }
+}
+@keyframes r-1iq689l { 
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(100%); }
+}
+.r-bi4vy9 { transform: translateY(100%); }
+.r-1ny4l3l { outline-style: none; }
+.r-1qd0xha { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+.r-7cikom { font-size: inherit; }
+.r-1c6unfx { forced-color-adjust: none; }
+.r-4v7adb { height: 5px; }
+.r-1ay1djp { animation-duration: 1s; }
+.r-ebwn4k { animation-name: r-q67da2; }
+@-webkit-keyframes r-q67da2 { 
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+@keyframes r-q67da2 { 
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+.r-97e31f { padding-bottom: env(safe-area-inset-bottom); }
+.r-bv2aro { padding-left: env(safe-area-inset-left); }
+.r-hxflta { padding-right: env(safe-area-inset-right); }
+.r-10xqauy { padding-top: env(safe-area-inset-top); }
+.r-1dernwh { height: 70%; }
+.r-13tjlyg { transition-duration: 0.1s; }
+.r-k200y { align-self: flex-start; }
+.r-1ewcgjf { box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px; }
+.r-6taxm2::-webkit-input-placeholder { color: var(--placeholderTextColor); opacity: 1; }
+.r-6taxm2::placeholder { color: var(--placeholderTextColor); opacity: 1; }
+.r-van48c { caret-color: transparent; }
+.r-173mn98 { align-self: flex-end; }
+.r-1onu96p { }
+.r-1b43r93 { font-size: 14px; }
+.r-8ay8q1 { letter-spacing: 0.1px; }
+.r-rjixqe { line-height: 20px; }
+.r-icoktb { opacity: 0.5; }
+.r-1472mwg { height: 24px; }
+.r-lrsllp { width: 24px; }
+.r-60vfwk { min-width: 1px; }
+.r-1inkyih { font-size: 17px; }
+.r-356f0p { letter-spacing: 0.35px; }
+.r-1habvwh { align-items: flex-start; }
+.r-kemksi { background-color: rgb(0, 0, 0); }
+.r-1kihuf0 { align-self: center; }
+.r-76blku { height: 21px; }
+.r-1xzupcd { width: 13px; }
+.r-qklmqi { border-bottom-width: 1px; }
+.r-1oszu61 { align-items: stretch; }
+.r-ws9h79 { left: 4px; }
+.r-12f6czt { top: 17px; }
+.r-3mc0re { right: 8px; }
+.r-vboj7i { top: -7px; }
+.r-1ld3bg { top: -4px; }
+.r-1i10wst { font-size: 18px; }
+.r-5oul0u { margin-bottom: 8px; }
+.r-1kb76zh { margin-right: 8px; }
+.r-knv0ih { margin-top: 8px; }
+.r-1h0z5md { justify-content: flex-start; }
+.r-17s6mgv { justify-content: flex-end; }
+.r-1iusvr4 { flex-basis: 0px; }
+.r-qfi6ny { top: 30000px; }
+.r-184en5c { z-index: 1; }
+.r-h0d30l { height: 28px; }
+.r-726pan { width: 31px; }
+.r-o4n3w5 { width: 23px; }
+.r-18nhz7w { top: -3px; }
+.r-10x49cs { font-size: 10px; }
+.r-135wba7 { line-height: 24px; }
+.r-n6v787 { font-size: 13px; }
+.r-1enofrn { font-size: 12px; }
+.r-1nlw0im { bottom: 8px; }
+.r-1r74h94 { left: 8px; }
+.r-ubezar { font-size: 16px; }
+.r-1pm8pkb { font-family: Courier; }
+.r-1g80hic { opacity: 0.8; }
+.r-vacyoi { padding-bottom: 64px; }
+.r-lpb231 { height: 168px; }
+.r-1nxhmzv { margin-bottom: 28px; }
+.r-1c85bru { width: 270px; }
+.r-19oahor { font-size: 64px; }
+.r-1vr29t4 { font-weight: 800; }
+.r-so7y2g { line-height: 64px; }
+.r-uho16t { font-size: 34px; }
+.r-aruset { font-weight: 200; }
+.r-6gpygo { margin-bottom: 12px; }
+.r-14gqq1x { margin-top: 4px; }
+.r-bt1l66 { min-height: 20px; }
+.r-kizejy { color: rgb(155, 161, 166); }
+.r-17u3ijr { background-color: rgba(155, 161, 166, 0.27); }
+.r-11v9fek { min-width: 180px; }
+.r-1ssbvtb { gap: 12px; }
+.r-1no09lo { margin-top: 28px; }
+.r-1r4fvd0 { color: rgb(82, 169, 255); }
+.r-adyw6z { font-size: 20px; }
+.r-mro3nb { background-color: rgb(21, 23, 24); }
+.r-1xpsq9i { box-shadow: rgba(0, 0, 0, 0.33) 0px 3px 3px; }
+.r-1i71y14 { gap: 14px; }
+.r-1ge9hsw { max-width: 960px; }
+.r-zz5t5d { font-size: 28px; }
+.r-vw2c0b { font-weight: bold; }
+.r-qn3fzs { padding-bottom: 24px; }
+.r-1wtj0ep { justify-content: space-between; }
+.r-wfqgy4 { transition-duration: 100ms; }
+.r-17tloay { opacity: 0.6; }
+.r-y7v2we { background-color: rgb(32, 36, 37); }
+.r-eu3ka { height: 40px; }
+.r-1aockid { width: 40px; }
+.r-1cmwbt1 { gap: 8px; }
+.r-1kfrs79 { font-weight: 600; }
+.r-1w6e6rj { flex-wrap: wrap; }
+.r-1ikidpy { letter-spacing: 0.5px; }
+.r-17tb59b { opacity: 0.7; }
+.r-x11e5r { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+.r-1ghxqbu { font-variant: tabular-nums; }
+.r-1ui5ee8 { font-size: 32px; }
+.r-cqee49 { color: rgb(0, 0, 0); }
+.r-1jkjb { margin-left: 8px; }
+.r-18u1ve8 { color: rgba(255, 255, 255, 0.4); }
+.r-1ddef8g { text-decoration-line: underline; }
+.r-1a2p6p6 { text-decoration-style: solid; }
+.r-1ffj0ar { background-color: rgba(0, 0, 0, 0.4); }
+.r-1sg8ghl { z-index: 1000; }
+.r-1aiqnjv { font-family: monospace, monospace; }
+.r-1s3egr7 { z-index: 100; }
+.r-17jld2h { background-color: rgb(11, 12, 30); }
+.r-1x6x58a { width: 23.3248px; }
+.r-1w2pmg { height: 0px; }
+.r-1h2t8mc { width: 0px; }
+html, body { height: 100%; }
+body { overflow: hidden; }
+#root { display: flex; height: 100%; flex: 1 1 0%; }
+@keyframes RollOutRight { 
+  0% { transform: translateX(0vw) rotate(0deg); }
+  100% { transform: translateX(100vw) rotate(180deg); }
+}
+@keyframes RollOutLeft { 
+  0% { transform: translateX(0vw) rotate(0deg); }
+  100% { transform: translateX(-100vw) rotate(-180deg); }
+}
+@keyframes RollInRight { 
+  0% { transform: translateX(100vw) rotate(180deg); }
+  100% { transform: translateX(0vw) rotate(0deg); }
+}
+@keyframes RollInLeft { 
+  0% { transform: translateX(-100vw) rotate(-180deg); }
+  100% { transform: translateX(0vw) rotate(0deg); }
+}
+@keyframes RotateOutUpRight { 
+  0% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(40%) translateY(-250%) rotate(90deg); opacity: 0; }
+}
+@keyframes RotateOutUpLeft { 
+  0% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(-40%) translateY(-250%) rotate(-90deg); opacity: 0; }
+}
+@keyframes RotateOutDownRight { 
+  0% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(40%) translateY(250%) rotate(-90deg); opacity: 0; }
+}
+@keyframes RotateOutDownLeft { 
+  0% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+  100% { transform: translateX(-40%) translateY(250%) rotate(90deg); opacity: 0; }
+}
+@keyframes RotateInUpRight { 
+  0% { transform: translateX(40%) translateY(250%) rotate(-90deg); opacity: 0; }
+  100% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+}
+@keyframes RotateInUpLeft { 
+  0% { transform: translateX(-40%) translateY(250%) rotate(90deg); opacity: 0; }
+  100% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+}
+@keyframes RotateInDownRight { 
+  0% { transform: translateX(40%) translateY(-250%) rotate(90deg); opacity: 0; }
+  100% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+}
+@keyframes RotateInDownLeft { 
+  0% { transform: translateX(-50%) translateY(-250%) rotate(-90deg); opacity: 0; }
+  100% { transform: translateX(0%) translateY(0%) rotate(0deg); opacity: 1; }
+}
+@keyframes PinwheelOut { 
+  0% { transform: rotate(0rad) scale(1); opacity: 1; }
+  100% { transform: rotate(5rad) scale(0); opacity: 0; }
+}
+@keyframes PinwheelIn { 
+  0% { transform: rotate(5rad) scale(0); opacity: 0; }
+  100% { transform: rotate(0deg) scale(1); opacity: 1; }
+}
+@keyframes LightSpeedOutLeft { 
+  0% { transform: translateX(0vw) skew(0deg); opacity: 1; }
+  100% { transform: translateX(-100vw) skew(45deg); opacity: 0; }
+}
+@keyframes LightSpeedOutRight { 
+  0% { transform: translateX(0vw) skewX(0deg); opacity: 1; }
+  100% { transform: translateX(100vw) skewX(-45deg); opacity: 0; }
+}
+@keyframes LightSpeedInLeft { 
+  0% { transform: translateX(-100vw) skewX(45deg); opacity: 0; }
+  70% { transform: skewX(-10deg); }
+  85% { transform: skewX(5deg); }
+  100% { transform: skewX(0deg); }
+}
+@keyframes LightSpeedInRight { 
+  0% { transform: translateX(100vw) skewX(-45deg); opacity: 0; }
+  70% { transform: skewX(10deg); }
+  85% { transform: skewX(-5deg); }
+  100% { transform: skewX(0deg); }
+}
+@keyframes SlideOutDown { 
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(100vh); }
+}
+@keyframes SlideOutUp { 
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-100vh); }
+}
+@keyframes SlideOutLeft { 
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100vw); }
+}
+@keyframes SlideOutRight { 
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(100vw); }
+}
+@keyframes SlideInDown { 
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(0%); }
+}
+@keyframes SlideInUp { 
+  0% { transform: translateY(-100vh); }
+  100% { transform: translateY(0%); }
+}
+@keyframes SlideInLeft { 
+  0% { transform: translateX(-100vw); }
+  100% { transform: translateX(0%); }
+}
+@keyframes SlideInRight { 
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(0%); }
+}
+@keyframes ZoomOutEasyDown { 
+  0% { transform: translateY(0%) scale(1); }
+  100% { transform: translateY(100%) scale(0); }
+}
+@keyframes ZoomOutEasyUp { 
+  0% { transform: translateY(0%) scale(1); }
+  100% { transform: translateY(-100%) scale(0); }
+}
+@keyframes ZoomOutDown { 
+  0% { transform: translateX(0vh) scale(1); }
+  100% { transform: translateY(100vh) scale(0); }
+}
+@keyframes ZoomOutUp { 
+  0% { transform: translateX(0vh) scale(1); }
+  100% { transform: translateY(-100vh) scale(0); }
+}
+@keyframes ZoomOutLeft { 
+  0% { transform: translateX(0vw) scale(1); }
+  100% { transform: translateX(-100vw) scale(0); }
+}
+@keyframes ZoomOutRight { 
+  0% { transform: translateX(0vw) scale(1); }
+  100% { transform: translateX(100vw) scale(0); }
+}
+@keyframes ZoomOutRotate { 
+  0% { transform: scale(1) rotate(0rad); }
+  100% { transform: scale(0) rotate(0.3rad); }
+}
+@keyframes ZoomOut { 
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+@keyframes ZoomInEasyDown { 
+  0% { transform: translateY(100%) scale(0); }
+  100% { transform: translateY(0%) scale(1); }
+}
+@keyframes ZoomInEasyUp { 
+  0% { transform: translateY(-100%) scale(0); }
+  100% { transform: translateY(0%) scale(1); }
+}
+@keyframes ZoomInDown { 
+  0% { transform: translateY(100vh) scale(0); }
+  100% { transform: translateY(0%) scale(1); }
+}
+@keyframes ZoomInUp { 
+  0% { transform: translateY(-100vh) scale(0); }
+  100% { transform: translateY(0%) scale(1); }
+}
+@keyframes ZoomInLeft { 
+  0% { transform: translateX(-100vw) scale(0); }
+  100% { transform: translateX(0%) scale(1); }
+}
+@keyframes ZoomInRight { 
+  0% { transform: translateX(100vw) scale(0); }
+  100% { transform: translateX(0%) scale(1); }
+}
+@keyframes ZoomInRotate { 
+  0% { transform: scale(0) rotate(0.3rad); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+@keyframes ZoomIn { 
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes StretchOutY { 
+  0% { transform: scaleY(1); }
+  100% { transform: scaleY(0); }
+}
+@keyframes StretchOutX { 
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(0); }
+}
+@keyframes StretchInY { 
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+@keyframes StretchInX { 
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+@keyframes FlipOutEasyY { 
+  0% { transform: perspective(500px) rotateY(0deg); }
+  100% { transform: perspective(500px) rotateY(90deg); }
+}
+@keyframes FlipOutEasyX { 
+  0% { transform: perspective(500px) rotateX(0deg); }
+  100% { transform: perspective(500px) rotateX(90deg); }
+}
+@keyframes FlipOutXDown { 
+  0% { transform: perspective(500px) rotateX(0deg) translateY(0%); }
+  100% { transform: perspective(500px) rotateX(-90deg) translateY(100%); }
+}
+@keyframes FlipOutXUp { 
+  0% { transform: perspective(500px) rotateX(0deg) translateY(0%); }
+  100% { transform: perspective(500px) rotateX(90deg) translateY(-100%); }
+}
+@keyframes FlipOutYLeft { 
+  0% { transform: perspective(500px) rotateY(0deg) translateX(0%); }
+  100% { transform: perspective(500px) rotateY(-90deg) translateX(-100%); }
+}
+@keyframes FlipOutYRight { 
+  0% { transform: perspective(500px) rotateY(0deg) translateX(0%); }
+  100% { transform: perspective(500px) rotateY(90deg) translateX(100%); }
+}
+@keyframes FlipInEasyY { 
+  0% { transform: perspective(500px) rotateY(90deg); }
+  100% { transform: perspective(500px) rotateY(0deg); }
+}
+@keyframes FlipInEasyX { 
+  0% { transform: perspective(500px) rotateX(90deg); }
+  100% { transform: perspective(500px) rotateX(0deg); }
+}
+@keyframes FlipInXDown { 
+  0% { transform: perspective(500px) rotateX(-90deg) translateY(100%); }
+  100% { transform: perspective(500px) rotateX(0deg) translateY(0%); }
+}
+@keyframes FlipInXUp { 
+  0% { transform: perspective(500px) rotateX(90deg) translateY(-100%); }
+  100% { transform: perspective(500px) rotateX(0deg) translateY(0%); }
+}
+@keyframes FlipInYLeft { 
+  0% { transform: perspective(500px) rotateY(-90deg) translateX(-100%); }
+  100% { transform: perspective(500px) rotateY(0deg) translateX(0%); }
+}
+@keyframes FlipInYRight { 
+  0% { transform: perspective(500px) rotateY(90deg) translateX(100%); }
+  100% { transform: perspective(500px) rotateY(0deg) translateX(0%); }
+}
+@keyframes BounceOutDown { 
+  0% { transform: translateY(0px); }
+  15% { transform: translateY(-10px); }
+  30% { transform: translateY(10px); }
+  45% { transform: translateY(-20px); }
+  100% { transform: translateY(100vh); }
+}
+@keyframes BounceOutUp { 
+  0% { transform: translateY(0px); }
+  15% { transform: translateY(10px); }
+  30% { transform: translateY(-10px); }
+  45% { transform: translateY(20px); }
+  100% { transform: translateY(-100vh); }
+}
+@keyframes BounceOutLeft { 
+  0% { transform: translateX(0px); }
+  15% { transform: translateX(10px); }
+  30% { transform: translateX(-10px); }
+  45% { transform: translateX(20px); }
+  100% { transform: translateX(-100vh); }
+}
+@keyframes BounceOutRight { 
+  0% { transform: translateX(0px); }
+  15% { transform: translateX(-10px); }
+  30% { transform: translateX(10px); }
+  45% { transform: translateX(-20px); }
+  100% { transform: translateX(100vh); }
+}
+@keyframes BounceOut { 
+  0% { transform: scale(1); }
+  15% { transform: scale(1.1); }
+  30% { transform: scale(0.9); }
+  45% { transform: scale(1.2); }
+  100% { transform: scale(0.1); }
+}
+@keyframes BounceInDown { 
+  0% { transform: translateY(100vh); }
+  55% { transform: translateY(-20px); }
+  70% { transform: translateY(10px); }
+  85% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes BounceInUp { 
+  0% { transform: translateY(-100vh); }
+  55% { transform: translateY(20px); }
+  70% { transform: translateY(-10px); }
+  85% { transform: translateY(10px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes BounceInLeft { 
+  0% { transform: translateX(-100vw); }
+  55% { transform: translateX(20px); }
+  70% { transform: translateX(-10px); }
+  85% { transform: translateX(10px); }
+  100% { transform: translateX(0px); }
+}
+@keyframes BounceInRight { 
+  0% { transform: translateX(100vw); }
+  55% { transform: translateX(-20px); }
+  70% { transform: translateX(10px); }
+  85% { transform: translateX(-10px); }
+  100% { transform: translateX(0px); }
+}
+@keyframes BounceIn { 
+  0% { transform: scale(0); }
+  55% { transform: scale(1.2); }
+  70% { transform: scale(0.9); }
+  85% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+@keyframes FadeOutDown { 
+  0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(25px); }
+}
+@keyframes FadeOutUp { 
+  0% { opacity: 1; transform: translateY(0px); }
+  100% { opacity: 0; transform: translateY(-25px); }
+}
+@keyframes FadeOutLeft { 
+  0% { opacity: 1; transform: translateX(0px); }
+  100% { opacity: 0; transform: translateX(-25px); }
+}
+@keyframes FadeOutRight { 
+  0% { opacity: 1; transform: translateX(0px); }
+  100% { opacity: 0; transform: translateX(25px); }
+}
+@keyframes FadeOut { 
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes FadeInDown { 
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes FadeInUp { 
+  0% { opacity: 0; transform: translateY(-25px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+@keyframes FadeInLeft { 
+  0% { opacity: 0; transform: translateX(-25px); }
+  100% { opacity: 1; transform: translateX(0px); }
+}
+@keyframes FadeInRight { 
+  0% { opacity: 0; transform: translateX(25px); }
+  100% { opacity: 1; transform: translateX(0px); }
+}
+@keyframes FadeIn { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+[data-expoimage] .cross-dissolve { transition-property: opacity; animation-fill-mode: forwards; }
+[data-expoimage] .cross-dissolve-start:not(.transitioning) { opacity: 0; }
+[data-expoimage] .cross-dissolve-active { opacity: 1; }
+[data-expoimage] .cross-dissolve-end { opacity: 0; }
+[data-expoimage] .flip-from-left { transition-property: transform, opacity; transform-origin: center center; transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important; }
+[data-expoimage] .flip-from-left-container { width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; perspective: 1000px; }
+[data-expoimage] .flip-from-left-start:not(.transitioning) { transform: translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(-180deg); opacity: 0; }
+[data-expoimage] .flip-from-left-active { transform: translateZ(0px) rotateY(0deg); opacity: 1; }
+[data-expoimage] .flip-from-left-end { transform: translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(180deg); opacity: 0; }
+[data-expoimage] .flip-from-right { transition-property: transform, opacity; transform-origin: center center; transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important; }
+[data-expoimage] .flip-from-right-container { width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; perspective: 1000px; }
+[data-expoimage] .flip-from-right-start:not(.transitioning) { transform: translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(180deg); opacity: 0; }
+[data-expoimage] .flip-from-right-active { transform: translateZ(0px) rotateY(0deg); opacity: 1; }
+[data-expoimage] .flip-from-right-end { transform: translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(-180deg); opacity: 0; }
+[data-expoimage] .flip-from-top { transition-property: transform, opacity; transform-origin: center center; transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important; }
+[data-expoimage] .flip-from-top-container { width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; perspective: 1000px; }
+[data-expoimage] .flip-from-top-start:not(.transitioning) { transform: translateZ(calc(var(--expo-image-height,1000px) * -1.5)) rotateX(180deg); opacity: 0; }
+[data-expoimage] .flip-from-top-active { transform: translateZ(0px) rotateX(0deg); opacity: 1; }
+[data-expoimage] .flip-from-top-end { transform: translateZ(calc(var(--expo-image-height,1000px) * -1.5)) rotateX(-180deg); opacity: 0; }
+[data-expoimage] .flip-from-bottom { transition-property: transform, opacity; transform-origin: center center; transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important; }
+[data-expoimage] .flip-from-bottom-container { width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; perspective: 1000px; }
+[data-expoimage] .flip-from-bottom-start:not(.transitioning) { transform: translateZ(calc(var(--expo-image-height,1000px) * -1.25)) rotateX(-180deg); opacity: 0; }
+[data-expoimage] .flip-from-bottom-active { transform: translateZ(0px) rotateX(0deg); opacity: 1; }
+[data-expoimage] .flip-from-bottom-end { transform: translateZ(calc(var(--expo-image-height,1000px) * -1.25)) rotateX(180deg); opacity: 0; }
+[data-expoimage] .image-timing-linear { --expo-image-timing: linear; }
+[data-expoimage] .image-timing-ease-in { --expo-image-timing: ease-in; }
+[data-expoimage] .image-timing-ease-out { --expo-image-timing: ease-out; }
+[data-expoimage] .image-timing-ease-in-out { --expo-image-timing: ease-in-out; }
+</style></head>
+
+  <body style="background-color: rgb(11, 12, 30);">
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    
+    <!-- The root element for your Expo app. -->
+    <div id="root"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx" style="flex: 1 1 0%; background-color: rgb(11, 12, 30);"><div class="css-g5y9jx r-13awgt0"><div style="position: absolute; inset: 0px; pointer-events: none; visibility: hidden;"></div><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgb(242, 242, 242); display: flex;"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0" style="background-color: rgb(11, 12, 30);"><div class="css-g5y9jx" style="flex: 1 1 0%; background-color: rgb(11, 12, 30);"><div class="css-g5y9jx r-150rngu r-eqz5dr r-16y2uox r-1wbh5a2 r-11yh6sk r-1rnoaur r-agouwx"><div class="css-g5y9jx" style="padding-bottom: 120px;"><div class="css-g5y9jx" style="padding-top: 4px; padding-right: 20px; padding-left: 20px; flex-direction: row; align-items: center; justify-content: space-between;"><button aria-label="Back" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-act="back" style="width: 44px; height: 44px; margin-left: -12px; align-items: center; justify-content: center; transform: scale(1);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="#ECEBFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button><button aria-label="Share this place" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-act="share" style="width: 44px; height: 44px; margin-right: -10px; align-items: center; justify-content: center; transform: scale(1);"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M12 3v12M7.5 7.5L12 3l4.5 4.5" stroke="#ECEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5 12v6.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V12" stroke="#ECEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></button></div><div class="css-g5y9jx" style="margin-top: 8px; margin-right: 20px; margin-left: 20px; height: 172px; border-radius: 22px; overflow: hidden; background-color: rgb(36, 44, 52);"><div class="css-g5y9jx" style="height: 172px; border-radius: 22px; overflow: hidden; background-color: rgb(36, 44, 52);"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; flex: 1 1 0%;"><div class="cross-dissolve-container"><img alt="Photo of Straight Outta Naples" class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/venue-photos/venues/straight-outta-naples.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 200ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="position: absolute; right: 10px; bottom: 10px;"><div class="css-g5y9jx" style="border-radius: 10px; overflow: hidden; border-width: 2px; border-color: rgba(255, 255, 255, 0.14); box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 15px; padding: 3px 8px;"><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="z-index: -1; border-radius: 10px; background-color: rgba(25, 25, 25, 0.31); backdrop-filter: saturate(180%) blur(8px);"></div><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgba(29, 32, 64, 0.55); z-index: -1;"></div><div class="css-g5y9jx" style="position: absolute; top: 0px; left: 12px; right: 12px; height: 1px; background-color: rgba(255, 255, 255, 0.08); z-index: -1;"></div><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-size: 11px; line-height: 14px; font-weight: 500;">Photo: @girlaboutmelb</div></div></div></div><div class="css-g5y9jx" style="margin-top: 14px; padding-right: 20px; padding-left: 20px; flex-direction: row; align-items: flex-start; gap: 14px;"><div class="css-g5y9jx" style="width: 54px; align-items: center;"><div class="css-g5y9jx" style="width: 52px; height: 52px;"><div class="css-g5y9jx r-633pao" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 52px; transform-origin: 26px 26px 0px;"><svg width="52" height="52" viewBox="0 0 300 300" style="overflow: visible;"><rect x="18" y="216" width="264" height="26" rx="13" fill="#9CCE62"></rect></svg></div><div class="css-g5y9jx r-633pao" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 52px; transform-origin: 10.9893px 36.0533px 0px; transform: translateY(0px) rotate(0deg);"><svg width="52" height="52" viewBox="0 0 300 300" style="overflow: visible;"><path d="M36 208 A114 114 0 0 1 264 208 Z" fill="#9CCE62"></path><ellipse cx="150" cy="82" rx="20" ry="16" fill="#9CCE62"></ellipse></svg></div><div class="css-g5y9jx r-633pao" style="position: absolute; left: 0px; top: 0px; width: 52px; height: 52px; transform-origin: 10.9893px 36.0533px 0px; transform: translateY(0px) rotate(0deg);"><div class="css-g5y9jx" style="width: 52px; height: 52px; transform-origin: 26px 27.7333px 0px; transform: scaleY(1);"><svg width="52" height="52" viewBox="0 0 300 300"><defs><clipPath id="llrestaurantsr2e0"><ellipse cx="124.6" cy="160" rx="19.4" ry="27"></ellipse></clipPath><clipPath id="llrestaurantsr2e1"><ellipse cx="175.4" cy="160" rx="19.4" ry="27"></ellipse></clipPath></defs><g><ellipse cx="124.6" cy="160" rx="19.4" ry="27" fill="#0B0C1E"></ellipse><g clip-path="url(#llrestaurantsr2e0)"><rect x="115.6" y="149.2" width="54" height="21.6" rx="9" fill="#9CCE62" skewX="-10" transform-origin="124.6 160" transform="skewX(-10)"></rect></g></g><g><ellipse cx="175.4" cy="160" rx="19.4" ry="27" fill="#0B0C1E"></ellipse><g clip-path="url(#llrestaurantsr2e1)"><rect x="166.4" y="149.2" width="54" height="21.6" rx="9" fill="#9CCE62" skewX="-10" transform-origin="175.4 160" transform="skewX(-10)"></rect></g></g></svg></div></div></div></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; gap: 3px;"><h1 dir="auto" role="heading" class="css-146c3p1" style="color: rgb(236, 235, 255); font-size: 28px; line-height: 31px; font-weight: 700; letter-spacing: -0.5px;">Straight Outta Naples</h1><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 15px; line-height: 20px; font-weight: 600;">Maidstone · <span aria-label="Price: medium" class="css-1jxf684" style="color: rgb(166, 168, 200); font-size: 15px; line-height: 20px; font-weight: 400;">$$<span class="css-1jxf684" style="color: rgb(166, 168, 200); font-size: 15px; line-height: 20px; font-weight: 400; opacity: 0.4;">$</span></span></div></div></div><div class="css-g5y9jx" style="margin-top: 12px; padding-right: 20px; padding-left: 20px; flex-direction: row;"><button role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="height: 40px; padding-right: 14px; padding-left: 14px; border-radius: 20px; border-width: 1px; border-color: rgb(42, 46, 85); background-color: rgba(0, 0, 0, 0); flex-direction: row; align-items: center; gap: 6px; transform: scale(1);"><div class="css-g5y9jx" style="visibility: initial; animation-name: FadeIn; animation-duration: 0.3s; animation-delay: 0s; animation-timing-function: cubic-bezier(0, 0, 1, 1);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="16" height="16" color="#ECEBFF" importantForAccessibility="no-hide-descendants"><defs><clipPath id="lmswant0e0mr3"><ellipse cx="123.1" cy="120" rx="25.3" ry="33.4"></ellipse></clipPath><clipPath id="lmswant0e1mr3"><ellipse cx="176.9" cy="120" rx="25.3" ry="33.4"></ellipse></clipPath><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmswant0mr3"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><g><g><ellipse fill="#000" cx="123.1" cy="120" rx="20.9" ry="29"></ellipse><g clip-path="url(#lmswant0e0mr3)"><rect fill="#fff" x="113.5" y="108.4" width="58" height="23.2" rx="9.7" transform="translate(123.1 120.0) skewX(-10) translate(-123.1 -120.0)"></rect></g></g><g><ellipse fill="#000" cx="176.9" cy="120" rx="20.9" ry="29"></ellipse><g clip-path="url(#lmswant0e1mr3)"><rect fill="#fff" x="167.2" y="108.4" width="58" height="23.2" rx="9.7" transform="translate(176.9 120.0) skewX(-10) translate(-176.9 -120.0)"></rect></g></g></g></mask></defs><g fill="currentColor"><g><g mask="url(#lmswant0mr3)"><path d="M90 34 H210 Q228 34 228 52 V272 L150 222 L72 272 V52 Q72 34 90 34 Z"></path></g></g></g></svg></div><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-size: 15px; line-height: 19px; font-weight: 600;">Want to try</div></button></div><div class="css-g5y9jx" style="margin-top: 14px; margin-right: 20px; margin-left: 20px; flex-direction: row;"><button aria-disabled="true" disabled="" aria-label="You: not yet" role="button" tabindex="-1" class="css-g5y9jx r-12vffkv" type="button" style="flex: 1 1 0%; align-items: center; gap: 2px; padding: 2px 6px; transform: scale(1);"><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 13px; line-height: 17px; font-weight: 500;">You</div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 4px;"><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-variant: tabular-nums; font-size: 24px; line-height: 29px; font-weight: 700;">—</div></div><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 12px; line-height: 16px;">Not yet</div></button><div aria-label="Following: none yet" class="css-g5y9jx" style="flex: 1 1 0%; align-items: center; gap: 2px; padding: 2px 6px; border-left-width: 1px; border-left-color: rgb(29, 32, 64);"><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 13px; line-height: 17px; font-weight: 500;">Following</div><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-variant: tabular-nums; font-size: 24px; line-height: 29px; font-weight: 700;">—</div><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 12px; line-height: 16px;">None yet</div></div><div aria-label="Locals score 8.9" class="css-g5y9jx" style="flex: 1 1 0%; align-items: center; gap: 2px; padding: 2px 6px; border-left-width: 1px; border-left-color: rgb(29, 32, 64);"><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 4px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="15" height="15" color="#A6A8C8" importantForAccessibility="no-hide-descendants"><defs><clipPath id="lmslocals1e0mr4"><ellipse cx="123.1" cy="120" rx="25.3" ry="33.4"></ellipse></clipPath><clipPath id="lmslocals1e1mr4"><ellipse cx="176.9" cy="120" rx="25.3" ry="33.4"></ellipse></clipPath><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmslocals1mr4"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><g><g><ellipse fill="#000" cx="123.1" cy="120" rx="20.9" ry="29"></ellipse><g clip-path="url(#lmslocals1e0mr4)"><rect fill="#fff" x="113.5" y="108.4" width="58" height="23.2" rx="9.7" transform="translate(123.1 120.0) skewX(-10) translate(-123.1 -120.0)"></rect></g></g><g><ellipse fill="#000" cx="176.9" cy="120" rx="20.9" ry="29"></ellipse><g clip-path="url(#lmslocals1e1mr4)"><rect fill="#fff" x="167.2" y="108.4" width="58" height="23.2" rx="9.7" transform="translate(176.9 120.0) skewX(-10) translate(-176.9 -120.0)"></rect></g></g></g></mask></defs><g fill="currentColor"><g><ellipse cx="150" cy="288" rx="44" ry="8" opacity="0.35"></ellipse></g><g><g mask="url(#lmslocals1mr4)"><path d="M150 278 C110 220 60 176 60 120 A90 90 0 0 1 240 120 C240 176 190 220 150 278 Z"></path></g></g></g></svg><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 13px; line-height: 17px; font-weight: 500;">Locals</div></div><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-variant: tabular-nums; font-size: 24px; line-height: 29px; font-weight: 700;">8.9</div><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 12px; line-height: 16px;">4 reccos</div></div></div><div class="css-g5y9jx" style="margin-top: 14px; padding-right: 20px; padding-left: 20px;"><button role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="height: 56px; border-radius: 16px; background-color: rgb(245, 48, 63); align-items: center; justify-content: center; padding-right: 20px; padding-left: 20px; border-width: 0px; border-color: rgb(42, 46, 85); transform: translateX(0px) scaleX(1) scaleY(1);"><div dir="auto" class="css-146c3p1" style="color: rgb(11, 12, 30); font-size: 17px; line-height: 22px; font-weight: 700;">Been? Give it a recco</div></button></div><div class="css-g5y9jx" style="margin-top: 16px; margin-right: 20px; margin-left: 20px; border-top-width: 1px; border-top-color: rgb(29, 32, 64);"><button aria-label="Address: 2/12 Hampstead Rd, Maidstone VIC 3012. Directions in Google Maps" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-act="map" style="flex-direction: row; align-items: center; gap: 14px; min-height: 52px; padding-top: 10px; padding-bottom: 10px; border-top-width: 0px; border-top-color: rgb(29, 32, 64);"><div class="css-g5y9jx" style="width: 22px; align-items: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="12" cy="10" r="2.4" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle></svg></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; opacity: 1;"><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-size: 15px; line-height: 20px; font-weight: 600;">2/12 Hampstead Rd</div><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 13px; line-height: 17px; font-weight: 500; margin-top: 2px;">Maidstone VIC 3012</div></div></button><div aria-disabled="true" aria-label="Opening hours: not listed" tabindex="-1" class="css-g5y9jx r-12vffkv" data-act="hours" style="flex-direction: row; align-items: center; gap: 14px; min-height: 52px; padding-top: 10px; padding-bottom: 10px; border-top-width: 1px; border-top-color: rgb(29, 32, 64);"><div class="css-g5y9jx" data-chev="" style="width: 22px; align-items: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle><path d="M12 7.5V12l3 2" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; opacity: 1;"><div dir="auto" class="css-146c3p1" style="color: rgb(124, 127, 166); font-size: 15px; line-height: 20px; font-weight: 500;">Not listed</div></div></div><div aria-disabled="true" aria-label="Instagram: not listed" tabindex="-1" class="css-g5y9jx r-12vffkv" data-act="ig" style="flex-direction: row; align-items: center; gap: 14px; min-height: 52px; padding-top: 10px; padding-bottom: 10px; border-top-width: 1px; border-top-color: rgb(29, 32, 64);"><div class="css-g5y9jx" style="width: 22px; align-items: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3.6" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></circle><path d="M15.6 12v1.4a2.6 2.6 0 0 0 5.2 0V12a8.8 8.8 0 1 0-3.4 6.9" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; opacity: 1;"><div dir="auto" class="css-146c3p1" style="color: rgb(124, 127, 166); font-size: 15px; line-height: 20px; font-weight: 500;">Not listed</div></div></div><div aria-disabled="true" aria-label="Phone: not listed" tabindex="-1" class="css-g5y9jx r-12vffkv" data-act="tel" style="flex-direction: row; align-items: center; gap: 14px; min-height: 52px; padding-top: 10px; padding-bottom: 10px; border-top-width: 1px; border-top-color: rgb(29, 32, 64);"><div class="css-g5y9jx" style="width: 22px; align-items: center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.6 3.5h2.6l1.4 4.2-2 1.4a11.5 11.5 0 0 0 6.3 6.3l1.4-2 4.2 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" stroke="#7C7FA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; opacity: 1;"><div dir="auto" class="css-146c3p1" style="color: rgb(124, 127, 166); font-size: 15px; line-height: 20px; font-weight: 500;">Not listed</div></div></div></div><div class="css-g5y9jx" style="visibility: initial; animation-name: FadeIn; animation-duration: 0.2s; animation-delay: 0s; animation-timing-function: cubic-bezier(0, 0, 1, 1);"><div class="css-g5y9jx" style="padding-top: 24px;"><div dir="auto" class="css-146c3p1" style="color: rgb(236, 235, 255); font-size: 22px; line-height: 28px; font-weight: 700; letter-spacing: -0.5px; padding-right: 20px; padding-left: 20px; margin-bottom: 10px;">On TikTok</div><div class="css-g5y9jx r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-agouwx r-2eszeu"><div class="css-g5y9jx r-18u37iz" style="padding-right: 20px; padding-left: 20px; gap: 12px;"><button aria-label="Watch @brosonbites’s video review of Straight Outta Naples" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-vi="0" style="width: 140px; gap: 8px; transform: scale(1);"><div class="css-g5y9jx" style="height: 249px; border-radius: 20px; overflow: hidden; background-color: rgb(64, 81, 63);"><div class="css-g5y9jx" style="position: absolute; right: -34px; bottom: -14px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="136" height="136" color="#9CCE62" importantForAccessibility="no-hide-descendants"><defs><clipPath id="lmsrestaurants1e0mr5"><ellipse cx="124.6" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><clipPath id="lmsrestaurants1e1mr5"><ellipse cx="175.4" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsrestaurants1mr5"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><g><g><ellipse fill="#000" cx="124.6" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e0mr5)"><rect fill="#fff" x="115.6" y="149.2" width="54" height="21.6" rx="9" transform="translate(124.6 160.0) skewX(-10) translate(-124.6 -160.0)"></rect></g></g><g><ellipse fill="#000" cx="175.4" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e1mr5)"><rect fill="#fff" x="166.4" y="149.2" width="54" height="21.6" rx="9" transform="translate(175.4 160.0) skewX(-10) translate(-175.4 -160.0)"></rect></g></g></g></mask></defs><g fill="currentColor"><g><rect x="18" y="216" width="264" height="26" rx="13"></rect></g><g><g mask="url(#lmsrestaurants1mr5)"><path d="M36 208 A114 114 0 0 1 264 208 Z"></path><ellipse cx="150" cy="82" rx="20" ry="16"></ellipse></g></g></g></svg></div><div class="css-g5y9jx" style="position: absolute; left: 0px; right: 0px; top: 0px; height: 179px; align-items: center; justify-content: center;"><div class="css-g5y9jx" style="border-radius: 24px; overflow: hidden; border-width: 2px; border-color: rgba(255, 255, 255, 0.14); box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 15px; width: 48px; height: 48px; align-items: center; justify-content: center;"><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="z-index: -1; border-radius: 24px; background-color: rgba(25, 25, 25, 0.31); backdrop-filter: saturate(180%) blur(8px);"></div><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgba(29, 32, 64, 0.55); z-index: -1;"></div><div class="css-g5y9jx" style="position: absolute; top: 0px; left: 12px; right: 12px; height: 1px; background-color: rgba(255, 255, 255, 0.08); z-index: -1;"></div><svg width="18" height="18" viewBox="0 0 24 24" style="margin-left: 2px;"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="#ECEBFF"></path></svg></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 6px;"><div class="css-g5y9jx" style="width: 20px; height: 20px; border-radius: 10px; background-color: rgb(53, 44, 92); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 20px; height: 20px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/8daf2993-a44c-465a-9a1c-75bb2ebc000e/tiktok-2026-11-22.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 13px; line-height: 18px; font-weight: 400; flex-shrink: 1;">@brosonbites</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mr6"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mr6)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div></div></button><button aria-label="Watch @eatwithkevin’s video review of Straight Outta Naples" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-vi="1" style="width: 140px; gap: 8px; transform: scale(1);"><div class="css-g5y9jx" style="height: 249px; border-radius: 20px; overflow: hidden; background-color: rgb(64, 81, 63);"><div class="css-g5y9jx" style="position: absolute; right: -34px; bottom: -14px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="136" height="136" color="#9CCE62" importantForAccessibility="no-hide-descendants"><defs><clipPath id="lmsrestaurants1e0mr7"><ellipse cx="124.6" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><clipPath id="lmsrestaurants1e1mr7"><ellipse cx="175.4" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsrestaurants1mr7"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><g><g><ellipse fill="#000" cx="124.6" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e0mr7)"><rect fill="#fff" x="115.6" y="149.2" width="54" height="21.6" rx="9" transform="translate(124.6 160.0) skewX(-10) translate(-124.6 -160.0)"></rect></g></g><g><ellipse fill="#000" cx="175.4" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e1mr7)"><rect fill="#fff" x="166.4" y="149.2" width="54" height="21.6" rx="9" transform="translate(175.4 160.0) skewX(-10) translate(-175.4 -160.0)"></rect></g></g></g></mask></defs><g fill="currentColor"><g><rect x="18" y="216" width="264" height="26" rx="13"></rect></g><g><g mask="url(#lmsrestaurants1mr7)"><path d="M36 208 A114 114 0 0 1 264 208 Z"></path><ellipse cx="150" cy="82" rx="20" ry="16"></ellipse></g></g></g></svg></div><div class="css-g5y9jx" style="position: absolute; left: 0px; right: 0px; top: 0px; height: 179px; align-items: center; justify-content: center;"><div class="css-g5y9jx" style="border-radius: 24px; overflow: hidden; border-width: 2px; border-color: rgba(255, 255, 255, 0.14); box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 15px; width: 48px; height: 48px; align-items: center; justify-content: center;"><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="z-index: -1; border-radius: 24px; background-color: rgba(25, 25, 25, 0.31); backdrop-filter: saturate(180%) blur(8px);"></div><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgba(29, 32, 64, 0.55); z-index: -1;"></div><div class="css-g5y9jx" style="position: absolute; top: 0px; left: 12px; right: 12px; height: 1px; background-color: rgba(255, 255, 255, 0.08); z-index: -1;"></div><svg width="18" height="18" viewBox="0 0 24 24" style="margin-left: 2px;"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="#ECEBFF"></path></svg></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 6px;"><div class="css-g5y9jx" style="width: 20px; height: 20px; border-radius: 10px; background-color: rgb(53, 44, 92); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 20px; height: 20px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/ae210ece-bb53-4df7-b770-71ef88e2fee3/tiktok-2026-11-21.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 13px; line-height: 18px; font-weight: 400; flex-shrink: 1;">@eatwithkevin</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mr8"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mr8)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div></div></button><button aria-label="Watch @girlaboutmelb’s video review of Straight Outta Naples" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-vi="2" style="width: 140px; gap: 8px; transform: scale(1);"><div class="css-g5y9jx" style="height: 249px; border-radius: 20px; overflow: hidden; background-color: rgb(64, 81, 63);"><div class="css-g5y9jx" style="position: absolute; right: -34px; bottom: -14px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="136" height="136" color="#9CCE62" importantForAccessibility="no-hide-descendants"><defs><clipPath id="lmsrestaurants1e0mr9"><ellipse cx="124.6" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><clipPath id="lmsrestaurants1e1mr9"><ellipse cx="175.4" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsrestaurants1mr9"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><g><g><ellipse fill="#000" cx="124.6" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e0mr9)"><rect fill="#fff" x="115.6" y="149.2" width="54" height="21.6" rx="9" transform="translate(124.6 160.0) skewX(-10) translate(-124.6 -160.0)"></rect></g></g><g><ellipse fill="#000" cx="175.4" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e1mr9)"><rect fill="#fff" x="166.4" y="149.2" width="54" height="21.6" rx="9" transform="translate(175.4 160.0) skewX(-10) translate(-175.4 -160.0)"></rect></g></g></g></mask></defs><g fill="currentColor"><g><rect x="18" y="216" width="264" height="26" rx="13"></rect></g><g><g mask="url(#lmsrestaurants1mr9)"><path d="M36 208 A114 114 0 0 1 264 208 Z"></path><ellipse cx="150" cy="82" rx="20" ry="16"></ellipse></g></g></g></svg></div><div class="css-g5y9jx" style="position: absolute; left: 0px; right: 0px; top: 0px; height: 179px; align-items: center; justify-content: center;"><div class="css-g5y9jx" style="border-radius: 24px; overflow: hidden; border-width: 2px; border-color: rgba(255, 255, 255, 0.14); box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 15px; width: 48px; height: 48px; align-items: center; justify-content: center;"><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="z-index: -1; border-radius: 24px; background-color: rgba(25, 25, 25, 0.31); backdrop-filter: saturate(180%) blur(8px);"></div><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgba(29, 32, 64, 0.55); z-index: -1;"></div><div class="css-g5y9jx" style="position: absolute; top: 0px; left: 12px; right: 12px; height: 1px; background-color: rgba(255, 255, 255, 0.08); z-index: -1;"></div><svg width="18" height="18" viewBox="0 0 24 24" style="margin-left: 2px;"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="#ECEBFF"></path></svg></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 6px;"><div class="css-g5y9jx" style="width: 20px; height: 20px; border-radius: 10px; background-color: rgb(74, 34, 50); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 20px; height: 20px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/b10049ba-5d29-438e-b3a9-df6e1519edc2/tiktok-2026-11-21.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 13px; line-height: 18px; font-weight: 400; flex-shrink: 1;">@girlaboutmelb</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mra"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mra)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div></div></button><button aria-label="Watch @delishdump’s video review of Straight Outta Naples" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" data-vi="3" style="width: 140px; gap: 8px; transform: scale(1);"><div class="css-g5y9jx" style="height: 249px; border-radius: 20px; overflow: hidden; background-color: rgb(64, 81, 63);"><div class="css-g5y9jx" style="position: absolute; right: -34px; bottom: -14px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="136" height="136" color="#9CCE62" importantForAccessibility="no-hide-descendants"><defs><clipPath id="lmsrestaurants1e0mrb"><ellipse cx="124.6" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><clipPath id="lmsrestaurants1e1mrb"><ellipse cx="175.4" cy="160" rx="23.8" ry="31.4"></ellipse></clipPath><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsrestaurants1mrb"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><g><g><ellipse fill="#000" cx="124.6" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e0mrb)"><rect fill="#fff" x="115.6" y="149.2" width="54" height="21.6" rx="9" transform="translate(124.6 160.0) skewX(-10) translate(-124.6 -160.0)"></rect></g></g><g><ellipse fill="#000" cx="175.4" cy="160" rx="19.4" ry="27"></ellipse><g clip-path="url(#lmsrestaurants1e1mrb)"><rect fill="#fff" x="166.4" y="149.2" width="54" height="21.6" rx="9" transform="translate(175.4 160.0) skewX(-10) translate(-175.4 -160.0)"></rect></g></g></g></mask></defs><g fill="currentColor"><g><rect x="18" y="216" width="264" height="26" rx="13"></rect></g><g><g mask="url(#lmsrestaurants1mrb)"><path d="M36 208 A114 114 0 0 1 264 208 Z"></path><ellipse cx="150" cy="82" rx="20" ry="16"></ellipse></g></g></g></svg></div><div class="css-g5y9jx" style="position: absolute; left: 0px; right: 0px; top: 0px; height: 179px; align-items: center; justify-content: center;"><div class="css-g5y9jx" style="border-radius: 24px; overflow: hidden; border-width: 2px; border-color: rgba(255, 255, 255, 0.14); box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 15px; width: 48px; height: 48px; align-items: center; justify-content: center;"><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="z-index: -1; border-radius: 24px; background-color: rgba(25, 25, 25, 0.31); backdrop-filter: saturate(180%) blur(8px);"></div><div class="css-g5y9jx r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgba(29, 32, 64, 0.55); z-index: -1;"></div><div class="css-g5y9jx" style="position: absolute; top: 0px; left: 12px; right: 12px; height: 1px; background-color: rgba(255, 255, 255, 0.08); z-index: -1;"></div><svg width="18" height="18" viewBox="0 0 24 24" style="margin-left: 2px;"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="#ECEBFF"></path></svg></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 6px;"><div class="css-g5y9jx" style="width: 20px; height: 20px; border-radius: 10px; background-color: rgb(31, 64, 72); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 20px; height: 20px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/8ad67531-bbd7-4b2c-ae55-076b01f7ebe8/tiktok-2026-11-22.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 13px; line-height: 18px; font-weight: 400; flex-shrink: 1;">@delishdump</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mrc"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mrc)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div></div></button></div></div></div><div class="css-g5y9jx" style="padding-top: 26px; padding-right: 20px; padding-left: 20px;"><h1 dir="auto" role="heading" class="css-146c3p1" style="color: rgb(236, 235, 255); font-size: 20px; line-height: 25px; font-weight: 700; margin-bottom: 6px;">Who recommends it</h1><button aria-label="@delishdump, 9.9" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="min-height: 64px; flex-direction: row; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; border-bottom-width: 1px; border-bottom-color: rgb(29, 32, 64); opacity: 1;"><div class="css-g5y9jx" style="width: 40px; height: 40px; border-radius: 20px; background-color: rgb(31, 64, 72); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 40px; height: 40px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/8ad67531-bbd7-4b2c-ae55-076b01f7ebe8/tiktok-2026-11-22.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; gap: 2px;"><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 16px; line-height: 20px; font-weight: 500; flex-shrink: 1;">@delishdump</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mrd"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mrd)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 13px; line-height: 17px;">Order this: Sant’Antonio pizza &amp; frittatina</div></div><div class="css-g5y9jx" style="min-width: 42px; align-items: flex-end;"><div dir="auto" aria-label="Score 9.9" class="css-146c3p1" style="color: rgb(255, 90, 102); font-size: 19px; line-height: 22px; font-weight: 500; letter-spacing: -0.3px; font-variant: tabular-nums;">9.9</div></div></button><button aria-label="@girlaboutmelb, 9.0" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="min-height: 64px; flex-direction: row; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; border-bottom-width: 1px; border-bottom-color: rgb(29, 32, 64); opacity: 1;"><div class="css-g5y9jx" style="width: 40px; height: 40px; border-radius: 20px; background-color: rgb(74, 34, 50); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 40px; height: 40px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/b10049ba-5d29-438e-b3a9-df6e1519edc2/tiktok-2026-11-21.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; gap: 2px;"><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 16px; line-height: 20px; font-weight: 500; flex-shrink: 1;">@girlaboutmelb</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mre"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mre)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 13px; line-height: 17px;">Order this: Vesuvio pizza &amp; carlucciell</div></div><div class="css-g5y9jx" style="min-width: 42px; align-items: flex-end;"><div dir="auto" aria-label="Score 9.0" class="css-146c3p1" style="color: rgb(255, 90, 102); font-size: 19px; line-height: 22px; font-weight: 500; letter-spacing: -0.3px; font-variant: tabular-nums;">9.0</div></div></button><button aria-label="@eatwithkevin, 8.6" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="min-height: 64px; flex-direction: row; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; border-bottom-width: 1px; border-bottom-color: rgb(29, 32, 64); opacity: 1;"><div class="css-g5y9jx" style="width: 40px; height: 40px; border-radius: 20px; background-color: rgb(53, 44, 92); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 40px; height: 40px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/ae210ece-bb53-4df7-b770-71ef88e2fee3/tiktok-2026-11-21.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; gap: 2px;"><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 16px; line-height: 20px; font-weight: 500; flex-shrink: 1;">@eatwithkevin</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mrf"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mrf)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 13px; line-height: 17px;">Order this: Capricciosa pizza</div></div><div class="css-g5y9jx" style="min-width: 42px; align-items: flex-end;"><div dir="auto" aria-label="Score 8.6" class="css-146c3p1" style="color: rgb(255, 90, 102); font-size: 19px; line-height: 22px; font-weight: 500; letter-spacing: -0.3px; font-variant: tabular-nums;">8.6</div></div></button><button aria-label="@brosonbites, 8.4" role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="min-height: 64px; flex-direction: row; align-items: center; gap: 12px; padding-top: 10px; padding-bottom: 10px; border-bottom-width: 0px; border-bottom-color: rgb(29, 32, 64); opacity: 1;"><div class="css-g5y9jx" style="width: 40px; height: 40px; border-radius: 20px; background-color: rgb(53, 44, 92); align-items: center; justify-content: center; overflow: hidden;"><div data-expoimage="true" class="css-g5y9jx" style="overflow: hidden; width: 40px; height: 40px;"><div class="cross-dissolve-container"><img class="cross-dissolve transitioning cross-dissolve-active image-timing-null" fetchpriority="auto" loading="lazy" src="https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/8daf2993-a44c-465a-9a1c-75bb2ebc000e/tiktok-2026-11-22.jpg" style="object-position: left 50% top 50%; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; object-fit: cover; transition-duration: 150ms; transition-timing-function: linear;"></div></div></div><div class="css-g5y9jx" style="flex: 1 1 0%; min-width: 0px; gap: 2px;"><div class="css-g5y9jx" style="flex-direction: row; align-items: center; gap: 5px; flex-shrink: 1;"><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(236, 235, 255); font-size: 16px; line-height: 20px; font-weight: 500; flex-shrink: 1;">@brosonbites</div><div aria-label="Verified creator" class="css-g5y9jx"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="14" height="14" color="#5B8CFF" importantForAccessibility="no-hide-descendants"><defs><mask maskUnits="userSpaceOnUse" x="-40" y="-40" width="380" height="380" id="lmsverified0mrg"><rect x="-40" y="-40" width="380" height="380" fill="#fff"></rect><path d="M98 154 L136 192 L206 112" fill="none" stroke="#000" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path></mask></defs><g fill="currentColor"><g><g mask="url(#lmsverified0mrg)"><ellipse cx="150" cy="150" rx="112" ry="128"></ellipse></g></g></g></svg></div></div><div dir="auto" class="css-146c3p1 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-1iln25a" style="color: rgb(166, 168, 200); font-weight: 400; font-size: 13px; line-height: 17px;">Order this: Vesuvio pizza</div></div><div class="css-g5y9jx" style="min-width: 42px; align-items: flex-end;"><div dir="auto" aria-label="Score 8.4" class="css-146c3p1" style="color: rgb(255, 90, 102); font-size: 19px; line-height: 22px; font-weight: 500; letter-spacing: -0.3px; font-variant: tabular-nums;">8.4</div></div></button></div><div class="css-g5y9jx" style="flex-flow: wrap; gap: 18px; padding-right: 20px; padding-left: 20px; padding-top: 28px;"><button role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button" style="flex-direction: row; align-items: center; gap: 6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 21V4M5 4h11l-2 4 2 4H5" stroke="#A6A8C8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 13px; line-height: 18px; font-weight: 400;">Closed or wrong place?</div></button><button role="button" tabindex="0" class="css-g5y9jx r-1loqt21 r-1otgn73" type="button"><div dir="auto" class="css-146c3p1" style="color: rgb(166, 168, 200); font-size: 13px; line-height: 18px; font-weight: 400;">Suggest a price fix</div></button></div></div></div></div></div></div></div></div></div><div class="css-g5y9jx r-633pao" style="position: absolute; top: 8px; left: 0px; right: 0px; align-items: center;"></div></div></div></div></div>
+  
+
+
+<div style="position: fixed; left: 0px; top: 0px; width: 0px; height: 0px; z-index: -1; overflow: hidden; visibility: hidden; transition-duration: 0.05s; transition-property: padding; transition-delay: 0s; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);"></div><div></div><div></div>
+<!-- Test page (24 Nov 2026): Straight Outta Naples' place page from the reccos build, with the proposed TikTok player. Safe to delete. -->
+<style>/* reccos TikTok player (prototype). Tokens from the design system: navy-950 #0B0C1E, navy-900 #14162E, navy-800 #1D2040,
+   navy-700 #2A2E55, navy-600 #3B4070, ink #ECEBFF, ink-muted #A6A8C8, ink-faint #7C7FA6, red #F5303F, red-text #FF5A66,
+   red-tint #411B31, verified #5B8CFF, herb-tile #40513F; radius-xl 28; glass rgba(29,32,64,.55) + blur 24 + saturate 180%.
+   Motion: Glide 380ms cubic-bezier(.25,.9,.3,1), Bounce 320ms cubic-bezier(.34,1.56,.64,1), Snap 220ms cubic-bezier(.2,.9,.3,1). */
+:root { --glide: cubic-bezier(.25,.9,.3,1); --bounce: cubic-bezier(.34,1.56,.64,1); --snap: cubic-bezier(.2,.9,.3,1); }
+[data-vi] { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.vp { position: fixed; inset: 0; z-index: 9000; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #ECEBFF; visibility: hidden; -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none; touch-action: none; }
+.vp.on { visibility: visible; }
+.vp-dim { position: absolute; inset: 0; background: rgba(11,12,30,.88); -webkit-backdrop-filter: blur(24px) saturate(140%); backdrop-filter: blur(24px) saturate(140%); opacity: 0; transition: opacity 260ms linear; }
+.vp.on .vp-dim { opacity: 1; }
+.vp.closing .vp-dim { opacity: 0; transition-duration: 300ms; }
+
+/* Top bar: the place on the left, close on the right. */
+.vp-top { position: absolute; left: 0; right: 0; top: 0; padding: calc(env(safe-area-inset-top) + 10px) 16px 0 20px; height: 54px; display: flex; align-items: center; gap: 12px; box-sizing: content-box; opacity: 0; transform: translateY(-6px); transition: opacity 220ms var(--snap), transform 220ms var(--snap); }
+.vp.ready .vp-top { opacity: 1; transform: none; transition-delay: 120ms; }
+.vp-place { flex: 1; min-width: 0; }
+.vp-place b { display: block; font: 500 16px/20px inherit; font-family: inherit; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vp-place span { display: block; font: 400 13px/18px inherit; font-family: inherit; color: #A6A8C8; }
+.vp-glass { width: 44px; height: 44px; border-radius: 22px; border: 1px solid rgba(255,255,255,.14); background: rgba(29,32,64,.55); -webkit-backdrop-filter: blur(24px) saturate(180%); backdrop-filter: blur(24px) saturate(180%); box-shadow: 0 10px 30px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.10); display: grid; place-items: center; padding: 0; color: #ECEBFF; cursor: pointer; transition: transform 220ms var(--snap); flex: none; }
+.vp-glass:active { transform: scale(.94); }
+.vp-glass svg { display: block; }
+
+/* The rail of cards. Each card is 9:16 with radius-xl; neighbours peek either side. */
+.vp-rail { position: absolute; left: 0; right: 0; }
+.vp-card { position: absolute; top: 0; left: 0; border-radius: 28px; overflow: hidden; background: #14162E; box-shadow: 0 18px 48px rgba(0,0,0,.55); transform-origin: 50% 50%; will-change: transform, opacity; }
+.vp-card::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px rgba(255,255,255,.08); pointer-events: none; z-index: 6; }
+.vp-poster { position: absolute; inset: 0; background: #40513F; overflow: hidden; }
+.vp-poster .mk { position: absolute; right: -16%; bottom: -3%; width: 92%; color: #9CCE62; opacity: .95; }
+.vp-poster .mk svg { width: 100%; height: auto; display: block; }
+.vp-poster .who { position: absolute; left: 0; right: 0; top: 30%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.vp-poster .who img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 3px rgba(11,12,30,.35), 0 10px 30px rgba(0,0,0,.45); }
+.vp-poster .who b { font: 500 15px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; display: flex; align-items: center; gap: 5px; text-shadow: 0 1px 8px rgba(0,0,0,.35); }
+.vp-frame { position: absolute; inset: 0; opacity: 0; transition: opacity 260ms linear; }
+.vp-frame.live { opacity: 1; }
+.vp-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; }
+.vp-shade { position: absolute; left: 0; right: 0; bottom: 0; height: 96px; background: linear-gradient(to top, rgba(11,12,30,.5), rgba(11,12,30,0)); pointer-events: none; z-index: 3; opacity: 0; transition: opacity 260ms linear; }
+.vp-card.on .vp-shade { opacity: 1; }
+.vp-prog { position: absolute; left: 16px; right: 16px; bottom: 14px; height: 3px; border-radius: 2px; background: rgba(255,255,255,.24); overflow: hidden; z-index: 4; opacity: 0; transition: opacity 200ms linear; }
+.vp-card.on .vp-prog { opacity: 1; }
+.vp-prog i { position: absolute; left: 0; top: 0; bottom: 0; width: 100%; background: #F5303F; border-radius: 2px; transform-origin: 0 50%; transform: scaleX(0); }
+.vp-paused { position: absolute; inset: 0; display: grid; place-items: center; z-index: 5; pointer-events: none; }
+.vp-paused .vp-glass { width: 72px; height: 72px; border-radius: 36px; transform: scale(.4); opacity: 0; transition: transform 320ms var(--bounce), opacity 160ms linear; }
+.vp-card.paused .vp-paused .vp-glass { transform: none; opacity: 1; }
+.vp-card.paused .vp-frame { filter: brightness(.82); }
+.vp-fail { position: absolute; left: 18px; right: 18px; bottom: 28px; z-index: 5; display: none; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.vp-card.failed .vp-fail { display: flex; }
+.vp-fail p { margin: 0; font: 400 15px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #ECEBFF; text-shadow: 0 1px 8px rgba(0,0,0,.5); }
+.vp-btn { height: 50px; padding: 0 22px; border-radius: 16px; border: 0; background: #F5303F; color: #0B0C1E; font: 700 17px/50px "Helvetica Neue", Helvetica, Arial, sans-serif; cursor: pointer; transition: transform 320ms var(--bounce); }
+.vp-btn:active { transform: scale(.94); }
+
+/* Eyes glancing while the video loads (the design system's waiting eyes). */
+.eyes { width: 40px; height: 22px; display: block; }
+.eyes .p { transition: transform 300ms var(--snap); }
+.vp-card.loading .who .eyes .p, .vp.loading .vp-pager .cur .p { animation: glance 1.6s var(--snap) infinite; }
+@keyframes glance { 0%, 18% { transform: translateX(0); } 30%, 48% { transform: translateX(-2.6px); } 60%, 78% { transform: translateX(2.6px); } 90%, 100% { transform: translateX(0); } }
+
+/* Hit areas: everything but the right rail of the playing card, where TikTok's own like, comment and share live. */
+.vp-hit { position: absolute; z-index: 2; }
+
+/* Below the card: pager, who, verdict. */
+.vp-info { position: absolute; left: 0; right: 0; }
+.vp-pager { height: 16px; display: flex; justify-content: center; align-items: center; gap: 6px; }
+.vp-pager button { height: 16px; min-width: 8px; padding: 0; border: 0; background: none; display: grid; place-items: center; cursor: pointer; }
+.vp-pager .dot { width: 6px; height: 6px; border-radius: 3px; background: #3B4070; transition: background 220ms linear; }
+.vp-pager button:hover .dot { background: #7C7FA6; }
+.vp-pager .pill { width: 30px; height: 16px; display: none; }
+.vp-pager .cur .dot { display: none; }
+.vp-pager .cur .pill { display: block; animation: popIn 320ms var(--bounce); }
+@keyframes popIn { 0% { transform: scale(.5); } 100% { transform: scale(1); } }
+.vp-meta { margin-top: 14px; transition: opacity 180ms linear, transform 220ms var(--snap); }
+.vp-meta.out { opacity: 0; transform: translateX(var(--dx, 0)); transition-duration: 120ms; }
+.vp-who { display: flex; align-items: center; gap: 12px; height: 44px; }
+.vp-who img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex: none; }
+.vp-who .t { flex: 1; min-width: 0; }
+.vp-who .t b { display: flex; align-items: center; gap: 5px; font: 500 17px/22px "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: -.2px; white-space: nowrap; }
+.vp-who .t b .h { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vp-who .t > span { display: block; font: 400 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #A6A8C8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vp-who .acts { display: flex; gap: 8px; }
+.vp-verdict { margin-top: 10px; display: flex; align-items: center; gap: 8px; height: 28px; min-width: 0; }
+.vp-verdict .lm { width: 26px; color: #F5303F; flex: none; }
+.vp-verdict .lm svg { width: 100%; height: auto; display: block; }
+.vp-verdict .sc { flex: none; height: 26px; padding: 0 8px; border-radius: 10px; background: #411B31; color: #FF5A66; font: 500 16px/26px "Helvetica Neue", Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; letter-spacing: -.3px; }
+.vp-verdict .or { min-width: 0; font: 400 15px/20px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #A6A8C8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vp-verdict .or em { font-style: normal; color: #ECEBFF; }
+
+.vp-info, .vp-rail .vp-card:not(.flying) { transition: none; }
+.vp.ready .vp-info { opacity: 1; transform: none; }
+.vp-info { opacity: 0; transform: translateY(12px); transition: opacity 240ms linear 120ms, transform 380ms var(--glide) 120ms; }
+.vp.closing .vp-info, .vp.closing .vp-top { opacity: 0; transition: opacity 140ms linear; transition-delay: 0ms; }
+
+/* The flyer carries the tapped tile up into the card and back. */
+.vp-fly { position: fixed; z-index: 9100; border-radius: 20px; overflow: hidden; pointer-events: none; box-shadow: 0 18px 48px rgba(0,0,0,.55); }
+.vp-fly .vp-poster .who { transition: opacity 200ms linear; }
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-card.loading .who .eyes .p, .vp.loading .vp-pager .cur .p { animation: none; }
+  .vp-pager .cur .pill { animation: none; }
+  .vp-info { transform: none; }
+}
+</style>
+<script>window.__VP_MARKS={"loved": {"ratio": 1.4578, "xml": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"-224.5 -154.0 449.0 308\"><defs><clipPath id=\"rxk0\"><ellipse cx=\"-112.5\" cy=\"0\" rx=\"168\" ry=\"210\"></ellipse></clipPath><clipPath id=\"rxk1\"><ellipse cx=\"112.5\" cy=\"0\" rx=\"168\" ry=\"210\"></ellipse></clipPath><mask id=\"rxloved0\" maskUnits=\"userSpaceOnUse\" x=\"-224.5\" y=\"-154.0\" width=\"449.0\" height=\"308\"><rect x=\"-224.5\" y=\"-154.0\" width=\"449.0\" height=\"308\" fill=\"#fff\"></rect><g clip-path=\"url(#rxk0)\"><path d=\"M12 21.3s-7.6-4.7-9.9-9.5C.5 8 2.9 3.8 6.9 3.8c2.2 0 3.8 1.2 5.1 3.1 1.3-1.9 2.9-3.1 5.1-3.1 4 0 6.4 4.2 4.8 8-2.3 4.8-9.9 9.5-9.9 9.5z\" fill=\"#000\" transform=\"translate(-108.5 -6) scale(6.4) translate(-12 -12.5)\"></path></g></mask><mask id=\"rxloved1\" maskUnits=\"userSpaceOnUse\" x=\"-224.5\" y=\"-154.0\" width=\"449.0\" height=\"308\"><rect x=\"-224.5\" y=\"-154.0\" width=\"449.0\" height=\"308\" fill=\"#fff\"></rect><g clip-path=\"url(#rxk1)\"><path d=\"M12 21.3s-7.6-4.7-9.9-9.5C.5 8 2.9 3.8 6.9 3.8c2.2 0 3.8 1.2 5.1 3.1 1.3-1.9 2.9-3.1 5.1-3.1 4 0 6.4 4.2 4.8 8-2.3 4.8-9.9 9.5-9.9 9.5z\" fill=\"#000\" transform=\"translate(116.5 -6) scale(6.4) translate(-12 -12.5)\"></path></g></mask></defs><g fill=\"currentColor\"><ellipse cx=\"-112.5\" cy=\"0\" rx=\"108\" ry=\"150\" mask=\"url(#rxloved0)\"></ellipse><ellipse cx=\"112.5\" cy=\"0\" rx=\"108\" ry=\"150\" mask=\"url(#rxloved1)\"></ellipse></g></svg>"}, "verified": {"ratio": 1, "xml": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\"><defs><mask id=\"lmsverified0\" maskUnits=\"userSpaceOnUse\" x=\"-40\" y=\"-40\" width=\"380\" height=\"380\"><rect x=\"-40\" y=\"-40\" width=\"380\" height=\"380\" fill=\"#fff\"></rect><path d=\"M98 154 L136 192 L206 112\" fill=\"none\" stroke=\"#000\" stroke-width=\"30\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></mask></defs><g fill=\"currentColor\"><g><g mask=\"url(#lmsverified0)\"><ellipse cx=\"150\" cy=\"150\" rx=\"112\" ry=\"128\"></ellipse></g></g></g></svg>"}, "restaurants": {"ratio": 1, "xml": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\"><defs><clipPath id=\"lmsrestaurants1e0\"><ellipse cx=\"124.6\" cy=\"160.0\" rx=\"23.8\" ry=\"31.4\"></ellipse></clipPath><clipPath id=\"lmsrestaurants1e1\"><ellipse cx=\"175.4\" cy=\"160.0\" rx=\"23.8\" ry=\"31.4\"></ellipse></clipPath><mask id=\"lmsrestaurants1\" maskUnits=\"userSpaceOnUse\" x=\"-40\" y=\"-40\" width=\"380\" height=\"380\"><rect x=\"-40\" y=\"-40\" width=\"380\" height=\"380\" fill=\"#fff\"></rect><g><g><ellipse fill=\"#000\" cx=\"124.6\" cy=\"160.0\" rx=\"19.4\" ry=\"27.0\"></ellipse><g clip-path=\"url(#lmsrestaurants1e0)\"><rect fill=\"#fff\" x=\"115.6\" y=\"149.2\" width=\"54.0\" height=\"21.6\" rx=\"9.0\" transform=\"translate(124.6 160.0) skewX(-10) translate(-124.6 -160.0)\"></rect></g></g><g><ellipse fill=\"#000\" cx=\"175.4\" cy=\"160.0\" rx=\"19.4\" ry=\"27.0\"></ellipse><g clip-path=\"url(#lmsrestaurants1e1)\"><rect fill=\"#fff\" x=\"166.4\" y=\"149.2\" width=\"54.0\" height=\"21.6\" rx=\"9.0\" transform=\"translate(175.4 160.0) skewX(-10) translate(-175.4 -160.0)\"></rect></g></g></g></mask></defs><g fill=\"currentColor\"><g><rect x=\"18\" y=\"216\" width=\"264\" height=\"26\" rx=\"13\"></rect></g><g><g mask=\"url(#lmsrestaurants1)\"><path d=\"M36 208 A114 114 0 0 1 264 208 Z\"></path><ellipse cx=\"150\" cy=\"82\" rx=\"20\" ry=\"16\"></ellipse></g></g></g></svg>"}};window.__VP_DATA={"place": {"name": "Straight Outta Naples", "cat": "restaurants", "catColor": "#9CCE62"}, "videos": [{"u": "brosonbites", "id": "7706415750566645010", "av": "8daf2993-a44c-465a-9a1c-75bb2ebc000e/tiktok-2026-11-22.jpg", "f": "18.1k on TikTok", "date": "10 Nov", "score": "8.4", "dish": "Vesuvio pizza"}, {"u": "eatwithkevin", "id": "7692932368914550037", "av": "ae210ece-bb53-4df7-b770-71ef88e2fee3/tiktok-2026-11-21.jpg", "f": "35.9k on TikTok", "date": "5 Oct", "score": "8.6", "dish": "Capricciosa pizza"}, {"u": "girlaboutmelb", "id": "7691211330434436359", "av": "b10049ba-5d29-438e-b3a9-df6e1519edc2/tiktok-2026-11-21.jpg", "f": "45.9k on TikTok", "date": "30 Sep", "score": "9.0", "dish": "Vesuvio pizza & carlucciell"}, {"u": "delishdump", "id": "7680846467816246546", "av": "8ad67531-bbd7-4b2c-ae55-076b01f7ebe8/tiktok-2026-11-22.jpg", "f": "11.5k on TikTok", "date": "2 Sep", "score": "9.9", "dish": "Sant’Antonio pizza & frittatina"}]};</script>
+<script>
+{
+  // The place page's own rows, as the app does them (this place lists no hours, Instagram or phone).
+  const q = (s) => document.querySelector(s);
+  const map = q('[data-act=map]');
+  if (map) map.addEventListener('click', () => window.open('https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent('Straight Outta Naples, 2/12 Hampstead Rd, Maidstone VIC 3012'), '_blank', 'noopener'));
+  const share = q('[data-act=share]');
+  if (share) share.addEventListener('click', () => { const text = 'Straight Outta Naples, Maidstone. Found it on reccos.'; if (navigator.share) navigator.share({ text }).catch(() => {}); });
+  const back = q('[data-act=back]');
+  if (back) back.addEventListener('click', () => { if (history.length > 1) history.back(); });
+}
+</script>
+<script>// reccos TikTok player (prototype, 24 Nov 2026). A tile on the place page grows into a 9:16 card that sits over the page;
+// the place's other videos wait either side and you swipe between them. One TikTok player is live at a time, inside the
+// middle card, with TikTok's own controls hidden; reccos draws the progress, pause, sound and the creator's verdict.
+// TikTok's logo and its like/comment/share column stay (the player always draws them), so the right edge of the
+// playing card is left to TikTok. Everything else on the card is ours: tap to pause, swipe to move, pull down to close.
+{
+  const MARKS = window.__VP_MARKS;
+  const DATA = window.__VP_DATA;
+  const AV = 'https://hlwwmqttvnimvvfjofrh.supabase.co/storage/v1/object/public/avatars/';
+  const Q = 'autoplay=1&loop=1&controls=0&progress_bar=0&play_button=0&volume_control=0&fullscreen_button=0&timestamp=0&music_info=0&description=0&rel=0&native_context_menu=0&closed_caption=0';
+  const RAIL = 64;   // TikTok's own column on the right of the playing card
+  const GAP = 14;    // between cards
+  const GLIDE = 'cubic-bezier(.25,.9,.3,1)', BOUNCE = 'cubic-bezier(.34,1.56,.64,1)';
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const V = DATA.videos, n = V.length;
+  let uid = 0;
+  const mark = (name, color) => {
+    const k = 'vp' + (uid++) + '_';
+    return MARKS[name].xml.replace(/id="([^"]+)"/g, `id="${k}$1"`).replace(/url\(#([^)]+)\)/g, `url(#${k}$1)`).replace('<svg ', `<svg style="color:${color}" `);
+  };
+  const eyes = (cls = 'eyes') => {
+    const k = 'vpe' + (uid++);
+    return `<svg class="${cls}" viewBox="0 0 40 22" aria-hidden="true"><defs><clipPath id="${k}a"><ellipse cx="13.7" cy="11.2" rx="5.4" ry="7.5"/></clipPath><clipPath id="${k}b"><ellipse cx="26.3" cy="11.2" rx="5.4" ry="7.5"/></clipPath></defs>
+      <rect width="40" height="22" rx="11" fill="#F5303F"/>
+      <ellipse cx="13.7" cy="11.2" rx="5.4" ry="7.5" fill="#0B0C1E"/><ellipse cx="26.3" cy="11.2" rx="5.4" ry="7.5" fill="#0B0C1E"/>
+      <g clip-path="url(#${k}a)"><g class="p"><rect x="11.2" y="8.2" width="15" height="6" rx="2.5" fill="#F5303F" transform="skewX(-10)" style="transform-box:fill-box;transform-origin:center"/></g></g>
+      <g clip-path="url(#${k}b)"><g class="p"><rect x="23.8" y="8.2" width="15" height="6" rx="2.5" fill="#F5303F" transform="skewX(-10)" style="transform-box:fill-box;transform-origin:center"/></g></g></svg>`;
+  };
+  const ICON = {
+    x: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#ECEBFF" stroke-width="2.2" stroke-linecap="round"/></svg>',
+    play: '<svg width="26" height="26" viewBox="0 0 24 24"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z" fill="#ECEBFF"/></svg>',
+    sound: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ECEBFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"/><path d="M15.5 9.2a4 4 0 0 1 0 5.6M18.3 6.6a7.6 7.6 0 0 1 0 10.8"/></svg>',
+    muted: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ECEBFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></svg>',
+    out: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ECEBFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v4.5A1.5 1.5 0 0 1 16.5 20h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6H10"/></svg>',
+  };
+  const tick = () => `<span style="width:15px;height:15px;display:inline-block;flex:none">${mark('verified', '#5B8CFF')}</span>`;
+  const url = (v) => `https://www.tiktok.com/@${v.u}/video/${v.id}`;
+  const poster = (v) => `<div class="vp-poster"><div class="mk">${mark(DATA.place.cat, DATA.place.catColor)}</div>
+    <div class="who"><img src="${AV + v.av}" alt=""><b>@${v.u}${tick()}</b>${n === 1 ? eyes() : ''}</div></div>`;
+
+  // Build the player once.
+  const root = document.createElement('div');
+  root.className = 'vp';
+  root.setAttribute('role', 'dialog');
+  root.setAttribute('aria-modal', 'true');
+  root.setAttribute('aria-label', `Videos of ${DATA.place.name}`);
+  root.innerHTML = `<div class="vp-dim"></div>
+    <div class="vp-top"><div class="vp-place"><b>${DATA.place.name}</b><span>${n} video${n === 1 ? '' : 's'} on TikTok</span></div>
+      <button class="vp-glass vp-x" aria-label="Close videos">${ICON.x}</button></div>
+    <div class="vp-rail">${V.map((v, i) => `<div class="vp-card" data-i="${i}" aria-label="Video ${i + 1} of ${n}, by @${v.u}">${poster(v)}
+      <div class="vp-frame"></div><div class="vp-shade"></div><div class="vp-prog"><i></i></div>
+      <div class="vp-paused"><span class="vp-glass">${ICON.play}</span></div>
+      <div class="vp-fail"><p>Not playing? Watch it on TikTok.</p><button class="vp-btn" data-out>Open in TikTok</button></div></div>`).join('')}</div>
+    <div class="vp-hit vp-hl"></div><div class="vp-hit vp-hr"></div>
+    <div class="vp-info">${n > 1 ? `<div class="vp-pager">${V.map((v, i) => `<button aria-label="Video ${i + 1} of ${n}, @${v.u}"><span class="dot"></span>${eyes('pill')}</button>`).join('')}</div>` : ''}
+      <div class="vp-meta"></div></div>`;
+  document.body.appendChild(root);
+  const $ = (s) => root.querySelector(s);
+  const cards = [...root.querySelectorAll('.vp-card')];
+  const dim = $('.vp-dim'), rail = $('.vp-rail'), info = $('.vp-info'), meta = $('.vp-meta'), hl = $('.vp-hl'), hr = $('.vp-hr');
+  const pager = [...root.querySelectorAll('.vp-pager button')];
+
+  let idx = 0, isOpen = false, busy = false, L = null;
+  let want = false;   // you chose mute
+  try { want = localStorage.getItem('vp-muted') === '1'; } catch {}
+  let muted = want;   // what the player says
+  const live = { i: -1, frame: null, ready: false, last: 0, loops: 0, playing: false, timer: 0, loud: 0 };
+
+  // Layout: the card is as large as fits with the info block under it, never wider than the screen less 32pt a side.
+  const probe = document.createElement('div');
+  probe.style.cssText = 'position:fixed;left:0;top:0;width:0;visibility:hidden;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)';
+  document.body.appendChild(probe);
+  function layout() {
+    const cs = getComputedStyle(probe), st = parseFloat(cs.paddingTop) || 0, sb = parseFloat(cs.paddingBottom) || 0;
+    const vw = innerWidth, vh = innerHeight;
+    const top = st + 74, infoH = (n > 1 ? 16 : 0) + 14 + 44 + 10 + 28, bottom = Math.max(sb, 12) + 18;
+    const W = Math.floor(Math.min(vw - 64, (vh - top - 16 - infoH - bottom) * 9 / 16)), H = Math.round(W * 16 / 9);
+    const left = Math.round((vw - W) / 2);
+    L = { vw, vh, top, W, H, left };
+    rail.style.top = top + 'px'; rail.style.height = H + 'px';
+    cards.forEach((c) => { c.style.width = W + 'px'; c.style.height = H + 'px'; });
+    const iw = Math.min(vw - 40, Math.max(W + 40, 360));
+    info.style.top = (top + H + 16) + 'px'; info.style.left = Math.round((vw - iw) / 2) + 'px'; info.style.width = iw + 'px';
+    Object.assign(hl.style, { left: '0px', top: top + 'px', width: (left + W - RAIL) + 'px', height: H + 'px' });
+    Object.assign(hr.style, { left: (left + W) + 'px', top: top + 'px', width: (vw - left - W) + 'px', height: H + 'px' });
+    render(0, 0);
+  }
+
+  // Place every card for a horizontal drag dx, or a pull down dy on the middle one.
+  function render(dx, dy) {
+    const step = L.W + GAP;
+    cards.forEach((c, i) => {
+      const x = L.left + (i - idx) * step + dx;
+      const d = Math.min(1, Math.abs(x - L.left) / step);
+      let s = 1 - 0.08 * d, y = 0, o = 1 - 0.5 * d;
+      if (i === idx && dy > 0) { y = dy; s *= 1 - Math.min(0.16, dy / 900); }
+      if (i !== idx && dy > 0) o *= Math.max(0, 1 - dy / 160);
+      c.style.transform = `translate3d(${x}px, ${y}px, 0) scale(${s})`;
+      c.style.opacity = String(o);
+      c.style.visibility = Math.abs(i - idx) > 2 ? 'hidden' : '';
+    });
+    if (dy > 0) { const f = Math.max(0, 1 - dy / 420); dim.style.opacity = String(f); info.style.opacity = String(Math.max(0, 1 - dy / 140)); $('.vp-top').style.opacity = info.style.opacity; }
+    else { dim.style.opacity = ''; info.style.opacity = ''; $('.vp-top').style.opacity = ''; }
+  }
+  function settle(ms = 380, ease = GLIDE) {
+    cards.forEach((c) => { c.style.transition = `transform ${ms}ms ${ease}, opacity ${ms}ms ${ease}`; });
+    clearTimeout(settle.t);
+    settle.t = setTimeout(() => cards.forEach((c) => { c.style.transition = ''; }), ms + 20);
+  }
+
+  // The words under the card: who, their verdict in reccos and what to order.
+  function fillMeta() {
+    const v = V[idx];
+    meta.innerHTML = `<div class="vp-who"><img src="${AV + v.av}" alt=""><div class="t"><b><span class="h">@${v.u}</span>${tick()}</b><span>${v.f} · ${v.date}</span></div>
+      <div class="acts"><button class="vp-glass vp-mute" aria-label="${muted ? 'Turn sound on' : 'Mute'}" aria-pressed="${muted}">${muted ? ICON.muted : ICON.sound}</button>
+      <button class="vp-glass" data-out aria-label="Open in TikTok">${ICON.out}</button></div></div>
+      ${v.score ? `<div class="vp-verdict"><span class="lm" aria-hidden="true">${mark('loved', '#F5303F')}</span><span class="sc" aria-label="Loved, ${v.score}">${v.score}</span>${v.dish ? `<span class="or">Order this: <em>${v.dish}</em></span>` : ''}</div>` : ''}`;
+    pager.forEach((b, i) => b.classList.toggle('cur', i === idx));
+  }
+  function swapMeta(dir) {
+    if (reduce) { fillMeta(); return; }
+    meta.style.setProperty('--dx', (dir > 0 ? -14 : 14) + 'px');
+    meta.classList.add('out');
+    setTimeout(() => { fillMeta(); meta.style.setProperty('--dx', (dir > 0 ? 14 : -14) + 'px'); requestAnimationFrame(() => meta.classList.remove('out')); }, 120);
+  }
+  function setMuted(m, remember) {
+    muted = m;
+    if (remember) { want = m; try { localStorage.setItem('vp-muted', m ? '1' : '0'); } catch {} }
+    const b = root.querySelector('.vp-mute');
+    if (b) { b.innerHTML = m ? ICON.muted : ICON.sound; b.setAttribute('aria-pressed', String(m)); b.setAttribute('aria-label', m ? 'Turn sound on' : 'Mute'); }
+  }
+
+  // The one live TikTok player.
+  const say = (type, value) => { try { live.frame && live.frame.contentWindow.postMessage({ 'x-tiktok-player': true, type, value }, '*'); } catch {} };
+  function unmount() {
+    if (!live.frame) return;
+    say('pause');
+    const c = cards[live.i], f = live.frame;
+    c.classList.remove('on', 'loading', 'paused', 'failed'); root.classList.remove('loading');
+    c.querySelector('.vp-frame').classList.remove('live');
+    c.querySelector('.vp-prog i').style.transform = 'scaleX(0)';
+    setTimeout(() => f.remove(), 260);
+    clearTimeout(live.timer);
+    Object.assign(live, { i: -1, frame: null, ready: false, last: 0, loops: 0, playing: false, loud: 0 });
+  }
+  function mount(i) {
+    if (live.i === i && live.frame) return;
+    unmount();
+    const c = cards[i], f = document.createElement('iframe');
+    f.src = `https://www.tiktok.com/player/v1/${V[i].id}?${Q}`;
+    f.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
+    f.title = `@${V[i].u}’s video of ${DATA.place.name}`;
+    c.querySelector('.vp-frame').appendChild(f);
+    c.classList.add('on', 'loading'); root.classList.add('loading');
+    Object.assign(live, { i, frame: f, ready: false, last: 0, loops: 0, playing: false, loud: 0 });
+    live.timer = setTimeout(() => { if (live.frame === f && !live.playing) c.classList.add('failed'); }, 9000);
+  }
+  addEventListener('message', (e) => {
+    if (!live.frame || e.source !== live.frame.contentWindow) return;
+    let d = e.data; try { if (typeof d === 'string') d = JSON.parse(d); } catch { return; }
+    if (!d || !d['x-tiktok-player']) return;
+    const c = cards[live.i];
+    if (d.type === 'onPlayerReady') { live.ready = true; say(want ? 'mute' : 'unMute'); say('play'); }
+    if (d.type === 'onStateChange') {
+      if (d.value === 1) { live.playing = true; c.classList.remove('loading', 'paused', 'failed'); root.classList.remove('loading'); c.querySelector('.vp-frame').classList.add('live'); if (!want && live.loud < 2) { live.loud++; say('unMute'); } }
+      if (d.value === 2) c.classList.add('paused');
+    }
+    if (d.type === 'onCurrentTime' && d.value && d.value.duration) {
+      const t = d.value.currentTime, dur = d.value.duration, bar = c.querySelector('.vp-prog i');
+      if (t > 0.05) { live.playing = true; c.classList.remove('loading', 'failed'); root.classList.remove('loading'); c.querySelector('.vp-frame').classList.add('live'); }
+      if (t + 0.6 < live.last) { bar.style.transition = 'none'; live.loops++; if (live.loops === 1) nudge(); }
+      else bar.style.transition = 'transform 520ms linear';
+      bar.style.transform = `scaleX(${Math.min(1, t / dur)})`;
+      live.last = t;
+    }
+    if (d.type === 'onMute') setMuted(!!d.value);
+    if (d.type === 'onError') c.classList.add('failed');
+  });
+  function togglePlay() {
+    const c = cards[idx];
+    if (!live.frame || live.i !== idx) { mount(idx); return; }
+    if (c.classList.contains('paused')) { c.classList.remove('paused'); if (!want) say('unMute'); say('play'); }
+    else { c.classList.add('paused'); say('pause'); }
+  }
+  // After a video's first loop, the next card leans in once: there's more.
+  function nudge() {
+    const next = cards[idx + 1];
+    if (!next || reduce || !next.animate) return;
+    next.animate([{ translate: '0 0' }, { translate: '-14px 0' }, { translate: '0 0' }], { duration: 560, easing: BOUNCE, iterations: 2 });
+  }
+
+  function go(i, dir) {
+    i = Math.max(0, Math.min(n - 1, i));
+    const moved = i !== idx;
+    if (moved) { unmount(); idx = i; swapMeta(dir ?? 1); }
+    settle();
+    render(0, 0);
+    clearTimeout(go.t);
+    go.t = setTimeout(() => { if (isOpen) mount(idx); }, moved ? 300 : 0);
+  }
+
+  // Gestures on the card area (not the TikTok column): tap to pause, swipe sideways to move, pull down to close.
+  let g = null;
+  function down(e) { if (!isOpen || busy) return; g = { x: e.clientX, y: e.clientY, t: performance.now(), axis: null, dx: 0, dy: 0, id: e.pointerId }; e.currentTarget.setPointerCapture(e.pointerId); }
+  function move(e) {
+    if (!g || e.pointerId !== g.id) return;
+    let dx = e.clientX - g.x, dy = e.clientY - g.y;
+    if (!g.axis && Math.hypot(dx, dy) > 8) g.axis = Math.abs(dx) > Math.abs(dy) ? 'x' : dy > 0 ? 'y' : 'none';
+    if (g.axis === 'x') {
+      if ((idx === 0 && dx > 0) || (idx === n - 1 && dx < 0)) dx *= 0.35;
+      g.dx = dx; render(dx, 0);
+      root.querySelectorAll('.vp-pager .cur .p').forEach((p) => { p.style.transform = `translateX(${Math.max(-2.6, Math.min(2.6, -dx / 40))}px)`; });
+    }
+    if (g.axis === 'y') { g.dy = Math.max(0, dy); render(0, g.dy); }
+  }
+  function up(e) {
+    if (!g || e.pointerId !== g.id) return;
+    const dt = Math.max(1, performance.now() - g.t), a = g.axis;
+    root.querySelectorAll('.vp-pager .p').forEach((p) => { p.style.transform = ''; });
+    if (!a) {
+      const x = g.x;
+      g = null;
+      if (x < L.left) go(idx - 1, -1); else if (x > L.left + L.W) go(idx + 1, 1);
+      else if (cards[idx].classList.contains('failed')) window.open(url(V[idx]), '_blank', 'noopener');
+      else togglePlay();
+      return;
+    }
+    if (a === 'x') {
+      const v = g.dx / dt;
+      if (g.dx < -L.W * 0.2 || v < -0.35) go(idx + 1, 1);
+      else if (g.dx > L.W * 0.2 || v > 0.35) go(idx - 1, -1);
+      else { settle(320, BOUNCE); render(0, 0); }
+    }
+    if (a === 'y') {
+      if (g.dy > 110 || g.dy / dt > 0.5) close(g.dy);
+      else { settle(320, BOUNCE); render(0, 0); }
+    }
+    g = null;
+  }
+  [hl, hr].forEach((el) => { el.addEventListener('pointerdown', down); el.addEventListener('pointermove', move); el.addEventListener('pointerup', up); el.addEventListener('pointercancel', up); });
+  dim.addEventListener('click', () => close(0));
+  $('.vp-x').addEventListener('click', () => close(0));
+  pager.forEach((b, i) => b.addEventListener('click', () => go(i, i > idx ? 1 : -1)));
+  root.addEventListener('click', (e) => {
+    if (e.target.closest('[data-out]')) window.open(url(V[idx]), '_blank', 'noopener');
+    if (e.target.closest('.vp-mute')) { const m = !muted; setMuted(m, true); say(m ? 'mute' : 'unMute'); if (!m && cards[idx].classList.contains('paused')) togglePlay(); }
+  });
+  addEventListener('keydown', (e) => {
+    if (!isOpen) return;
+    if (e.key === 'Escape') close(0);
+    if (e.key === 'ArrowRight') go(idx + 1, 1);
+    if (e.key === 'ArrowLeft') go(idx - 1, -1);
+    if (e.key === ' ') { e.preventDefault(); togglePlay(); }
+    if (e.key === 'm') root.querySelector('.vp-mute')?.click();
+  });
+  addEventListener('resize', () => { if (isOpen) layout(); });
+
+  // Open: the tapped tile grows into the card (Glide); the page dims; the words rise in after it.
+  const tileOf = (i) => { const b = document.querySelector(`[data-vi="${i}"]`); return b && (b.firstElementChild || b); };
+  function fly(from, to, r0, r1, ms, html, done) {
+    const f = document.createElement('div');
+    f.className = 'vp-fly';
+    f.innerHTML = html;
+    Object.assign(f.style, { left: from.left + 'px', top: from.top + 'px', width: from.width + 'px', height: from.height + 'px', borderRadius: r0 + 'px' });
+    document.body.appendChild(f);
+    f.getBoundingClientRect();
+    f.style.transition = `left ${ms}ms ${GLIDE}, top ${ms}ms ${GLIDE}, width ${ms}ms ${GLIDE}, height ${ms}ms ${GLIDE}, border-radius ${ms}ms ${GLIDE}`;
+    Object.assign(f.style, { left: to.left + 'px', top: to.top + 'px', width: to.width + 'px', height: to.height + 'px', borderRadius: r1 + 'px' });
+    setTimeout(() => { done(); f.remove(); }, ms + 10);
+    return f;
+  }
+  function open(i) {
+    if (isOpen || busy) return;
+    busy = true; isOpen = true; idx = i;
+    root.classList.remove('closing', 'ready');
+    root.classList.add('on');
+    layout(); fillMeta();
+    const tile = tileOf(i);
+    const target = { left: L.left, top: L.top, width: L.W, height: L.H };
+    cards.forEach((c) => { c.style.visibility = 'hidden'; });
+    const finish = () => { cards.forEach((c) => { c.style.transition = ''; }); render(0, 0); root.classList.add('ready'); busy = false; mount(idx); };
+    if (!tile || reduce) { rail.style.opacity = '0'; render(0, 0); requestAnimationFrame(() => { rail.style.transition = 'opacity 220ms linear'; rail.style.opacity = '1'; }); setTimeout(() => { rail.style.transition = ''; }, 240); finish(); return; }
+    const from = tile.getBoundingClientRect();
+    tile.style.visibility = 'hidden';
+    fly(from, target, 20, 28, 420, poster(V[i]), () => { tile.style.visibility = ''; finish(); });
+    // The neighbours slide in from where the rail would be, a beat behind.
+    cards.forEach((c, k) => { if (k !== i) { c.style.visibility = Math.abs(k - i) > 2 ? 'hidden' : ''; c.style.opacity = '0'; } });
+    setTimeout(() => { cards.forEach((c, k) => { if (k !== i) c.style.transition = 'opacity 260ms linear'; }); render(0, 0); cards[i].style.visibility = 'hidden'; }, 160);
+  }
+  // Close: the card goes back into its tile on the page (the row scrolls to it first).
+  function close(dy) {
+    if (!isOpen || busy) return;
+    busy = true;
+    const tile = tileOf(idx);
+    if (tile) {
+      let s = tile.parentElement;
+      while (s && s !== document.body) { const cs = getComputedStyle(s); if (/(auto|scroll)/.test(cs.overflowX) && s.scrollWidth > s.clientWidth) break; s = s.parentElement; }
+      if (s && s !== document.body) { const tr = tile.getBoundingClientRect(), sr = s.getBoundingClientRect(); if (tr.left < sr.left + 20 || tr.right > sr.right - 20) s.scrollLeft += tr.left - sr.left - 20; }
+    }
+    const from = cards[idx].getBoundingClientRect();
+    unmount();
+    root.classList.add('closing'); root.classList.remove('ready');
+    dim.style.opacity = ''; info.style.opacity = ''; $('.vp-top').style.opacity = '';
+    cards.forEach((c, k) => { c.style.transition = 'opacity 180ms linear'; c.style.opacity = '0'; });
+    const end = () => { root.classList.remove('on', 'closing'); cards.forEach((c) => { c.style.transition = ''; c.style.opacity = ''; }); isOpen = false; busy = false; };
+    if (!tile || reduce) { setTimeout(end, 300); return; }
+    const to = tile.getBoundingClientRect();
+    tile.style.visibility = 'hidden';
+    fly(from, to, 28, 20, 380, poster(V[idx]), () => { tile.style.visibility = ''; end(); });
+  }
+  document.querySelectorAll('[data-vi]').forEach((el) => el.addEventListener('click', () => open(Number(el.dataset.vi))));
+  window.__vp = { open, close, go, get idx() { return idx; }, get live() { return live; } };
+}
+</script>
+</body></html>
