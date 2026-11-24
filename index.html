@@ -112,12 +112,12 @@ async function main() {
   const app = document.getElementById('app');
   const name = username();
   if (!name) { app.innerHTML = `<div class="center"><div><div class="lockup" style="justify-content:center">${wordmark()}</div><p class="note">Recommend where you eat and drink in Melbourne, then share one link.</p></div></div>`; return; }
-  const [p] = await q(`profiles?select=id,username,display_name,instagram,tiktok,tint,avatar_path,is_creator,creator_verified_at,creator_focus,want_to_try_public&username=eq.${encodeURIComponent(name.toLowerCase())}`);
+  const [p] = await q(`profiles?select=id,username,display_name,instagram,tiktok,tint,avatar_path,is_creator,creator_verified_at,creator_focus&username=eq.${encodeURIComponent(name.toLowerCase())}`);
   if (!p) { app.innerHTML = `<div class="center"><div><h2 style="justify-content:center">Can’t find @${esc(name)}</h2><p class="note">The username may have changed.</p></div></div>`; return; }
   const V = 'venue:venues(id,name,category,suburb,price_tier,cuisine,venue_photos(storage_path,sort))';
   const [reccos, wants] = await Promise.all([
     q(`reccos?select=venue_id,category,reaction,score,dish,${V}&user_id=eq.${p.id}&order=score.desc`),
-    p.want_to_try_public ? q(`want_to_try?select=venue_id,created_at,${V}&user_id=eq.${p.id}&order=created_at.desc`) : Promise.resolve([]),
+    q(`want_to_try?select=venue_id,created_at,${V}&user_id=eq.${p.id}&order=created_at.desc`),
   ]);
   // Whose reccos: a person's first name; a creator's one-word name, or their handle when the name is longer.
   const words = (p.display_name || '').trim().split(/\s+/).filter(Boolean);
@@ -141,7 +141,7 @@ async function main() {
     const tabs = `<div class="tabs" role="tablist">${CATS.map(([k, label, , hue]) => `<button class="tab" role="tab" aria-selected="${k === cat}" style="--hue:${hue}" data-k="${k}"><span class="mk">${mark(k, hue, 30)}${by[k].length ? `<span class="count">${by[k].length}</span>` : ''}</span>${label}</button>`).join('')}</div>`;
     const rows = list.length ? list.map((r, i) => `<div class="row"><div class="rank">${i + 1}</div><div class="grow"><div class="name">${esc(r.venue.name)}</div><div class="sub">${esc(r.venue.suburb)}${r.dish ? ' · ' + esc(r.dish) : ''} · ${price(r.venue.price_tier)}</div></div><div class="num ${r.reaction}">${fmt(r.score)}</div></div>`).join('') : `<div class="empty">No ${c[1].toLowerCase()} yet.</div>`;
     const ws = wants.filter((w) => w.venue.category === cat);
-    const wantHtml = p.want_to_try_public && ws.length ? `<h2>${mark('want', 'var(--ink)', 20)} Want to try</h2><div class="tiles">${ws.map((w) => `<div class="tile"><div class="ph">${pic(w.venue)}</div><div class="name" style="margin-top:8px">${esc(w.venue.name)}</div><div class="sub">${esc(w.venue.suburb)} · ${price(w.venue.price_tier)}</div></div>`).join('')}</div>` : '';
+    const wantHtml = ws.length ? `<h2>${mark('want', 'var(--ink)', 20)} Want to try</h2><div class="tiles">${ws.map((w) => `<div class="tile"><div class="ph">${pic(w.venue)}</div><div class="name" style="margin-top:8px">${esc(w.venue.name)}</div><div class="sub">${esc(w.venue.suburb)} · ${price(w.venue.price_tier)}</div></div>`).join('')}</div>` : '';
     const closing = `<div class="closing"><div><h3>make your own reccos</h3><div class="note">Recommend where you eat and drink, then share one link.</div></div><div style="display:flex;flex-direction:column;gap:14px;align-items:flex-end"><div class="marks">${CATS.map(([k, , , hue]) => mark(k, hue, 34)).join('')}</div><button class="pill" onclick="document.getElementById('get').showModal()"><span class="chip">${mark('fine', '#0B0C1E', 14)}</span>Get the app</button></div></div>`;
     app.innerHTML = head + onesHtml + tabs + rows + wantHtml + closing;
     app.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => { cat = b.dataset.k; render(); }));
