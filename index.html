@@ -88,7 +88,7 @@
 </head>
 <body>
 <div class="wrap" id="app"><div class="center"><div class="note">Loading…</div></div></div>
-<dialog id="get"><h3 style="margin:0 0 8px">reccos is in private testing</h3><p class="note" id="getline">Ask for an invite to try it on your iPhone.</p><button class="pill" style="padding:10px 18px;margin-top:8px" onclick="this.closest('dialog').close()">OK</button></dialog>
+<dialog id="get"><h3 style="margin:0 0 8px">reccos is in private testing</h3><p class="note" id="getline">Ask for an invite to try it on your iPhone.</p><p class="note" id="openline" style="display:none;margin-top:10px">Already have reccos? <a id="openapp" href="#" style="color:inherit;font-weight:700">Open these reccos in the app</a>, and we’ll know who sent you.</p><button class="pill" style="padding:10px 18px;margin-top:8px" onclick="this.closest('dialog').close()">OK</button></dialog>
 <script>
 const SUPABASE_URL = 'https://hlwwmqttvnimvvfjofrh.supabase.co';
 const KEY = 'sb_publishable_GdTbYMGmWCygM9LpnRC-Dg_YrrOFSJW';
@@ -126,6 +126,9 @@ async function main() {
   const avatar = p.avatar_path ? `<img src="${SUPABASE_URL}/storage/v1/object/public/avatars/${esc(p.avatar_path)}" alt="">` : esc(first[0].toUpperCase());
   document.title = `${first}’s reccos`;
   document.getElementById('getline').textContent = `Ask ${first} for an invite to try it on your iPhone.`;
+  // Opening the app from here before onboarding counts as an invite: the app remembers who sent you.
+  document.getElementById('openapp').href = `reccos://u/${encodeURIComponent(p.username)}`;
+  document.getElementById('openline').style.display = '';
   const by = Object.fromEntries(CATS.map(([k]) => [k, reccos.filter((r) => r.category === k)]));
   const ones = CATS.map(([k]) => by[k][0]).filter(Boolean);
   let cat = (CATS.find(([k]) => by[k].length) || CATS[0])[0];
