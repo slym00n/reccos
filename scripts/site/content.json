@@ -1,0 +1,27 @@
+{
+  "_about": "The landing page's hand-picked parts. Who and what is featured is chosen here; names, scores, counts, follower numbers and Just opened come live from Supabase on every build (data.py). Venue and creator ids are the database's.",
+  "cards": ["eatwithkevin", "eatwithhendri", "melbfoodieee", "gwensies", "forksake", "girlaboutmelb"],
+  "sort": [
+    {"handle": "eatwithkevin", "category": "restaurants", "tiles": [
+      ["still-pockets", [244]], ["still-daguido", [228]], ["still-ikkoryu", [247]], ["still-tasty44", [232]],
+      ["still-season", [214]], ["still-bodrum", [259]], ["still-pasifika", [630]]]},
+    {"handle": "melbfoodieee", "category": "restaurants", "tiles": [
+      ["st-hualu", [271]], ["st-kasumi", [272]], ["st-ngon", [278]], ["st-hod", [240]],
+      ["st-marmelo", [128]], ["st-jukjut", [274]], ["st-hinoya", [252]]]},
+    {"handle": "brosonbites", "category": "cafes", "tiles": [
+      ["st-a1", [54]], ["st-calle", [468]], ["st-delis", [476, 222, 475]], ["st-hugos", [481]], ["st-sebbys", [461]]]}
+  ],
+  "ask": {
+    "query": "Neapolitan pizza out west tonight",
+    "intro": "Three pizza spots out west, open tonight.",
+    "kind": "Pizza",
+    "pick": {"venue": 255, "line": "is the Neapolitan one", "photo": "ph-naples", "credit": "girlaboutmelb", "drive": "9 min drive"},
+    "others": [{"venue": 254, "drive": "22 min drive"}, {"venue": 423, "drive": "8 min drive"}],
+    "videos": {"delishdump": "nv-delish", "girlaboutmelb": "nv-girl", "brosonbites": "nv-bros", "eatwithkevin": "nv-kevin"}
+  },
+  "strip": [
+    ["eatwithkevin", 219, "still-meatmaiden"], ["melbfoodieee", 271, "st-hualu"], ["brosonbites", 54, "st-a1"],
+    ["delishdump", 255, "nv-delish"], ["girlaboutmelb", 255, "nv-girl"], ["eatwithkevin", 217, "still-kebabs"],
+    ["melbfoodieee", 272, "st-kasumi"], ["brosonbites", 468, "st-calle"]
+  ]
+}
