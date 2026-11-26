@@ -1,0 +1,47 @@
+# Keeps the landing page live: every hour it rebuilds site/ from reccos' public data (scripts/site/build.py), and
+# commits only when the page actually changed. A failed or empty read fails the run and leaves the last good page.
+name: Landing page data
+
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [landing]
+    paths: ['scripts/site/**', '.github/workflows/landing-data.yml']
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: landing-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build the page from live data
+        run: python3 scripts/site/build.py
+
+      - name: Commit if the page changed
+        id: commit
+        run: |
+          if [ -z "$(git status --porcelain site)" ]; then echo "No change."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site
+          git commit -m "Landing page: refresh live data"
+          git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # A push made with the workflow's own token may not start a Pages build, so ask for one.
+      - name: Rebuild GitHub Pages
+        if: steps.commit.outputs.pushed == 'true' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build request failed; the next push will rebuild."

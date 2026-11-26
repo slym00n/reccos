@@ -1,0 +1,1185 @@
+{
+ "version": "2026-11-24",
+ "updated": "Last updated 24 November 2026",
+ "docs": {
+  "terms": {
+   "title": "Terms of Use",
+   "x": [
+    [
+     "PART",
+     "Part A: Terms for everyone"
+    ],
+    [
+     "H",
+     "1. About these Terms"
+    ],
+    [
+     "P",
+     "**1.1** These Terms of Use (**Terms**) are an agreement between you and reccos (**reccos**, **we**, **us** or **our**). They apply to the reccos app, our website and web profiles, and any related services (together, the **Service**)."
+    ],
+    [
+     "P",
+     "**1.2** These Terms include our Privacy Policy and Community Guidelines."
+    ],
+    [
+     "P",
+     "**1.3** Part A applies to everyone who uses the Service. Part B applies only if you are a Creator (see clause 22). If you are not a Creator, Part B has no effect for you. If Part A and Part B conflict, Part B prevails for Creators to the extent of the conflict."
+    ],
+    [
+     "P",
+     "**1.4** By creating an account or using the Service, you agree to these Terms. If you don’t agree, don’t use the Service."
+    ],
+    [
+     "H",
+     "2. Who can use reccos"
+    ],
+    [
+     "P",
+     "**2.1** You must be at least 18 years old to use the Service."
+    ],
+    [
+     "P",
+     "**2.2** We currently offer the Service in Australia. We may make it available in other places, or stop offering it in some places, at any time."
+    ],
+    [
+     "P",
+     "**2.3** You may hold one personal account. You must give us accurate information and keep it up to date."
+    ],
+    [
+     "P",
+     "**2.4** You must not use the Service if we have suspended or closed your account before, unless we agree."
+    ],
+    [
+     "H",
+     "3. Your account"
+    ],
+    [
+     "P",
+     "**3.1** You sign in with Apple. You are responsible for keeping your device and Apple ID secure, and for activity on your account. Tell us promptly at [contact email] if you think someone has used your account without permission."
+    ],
+    [
+     "P",
+     "**3.2** Your username must not impersonate another person, creator, venue or brand, or mislead others about who you are. We may reserve usernames, for example for creators or venues, and may change or reclaim a username that breaches these Terms or is misleading."
+    ],
+    [
+     "P",
+     "**3.3** If you give us a TikTok, Instagram or other social media handle, you confirm it is yours."
+    ],
+    [
+     "P",
+     "**3.4** You can delete your account at any time in the app’s settings (see clause 18)."
+    ],
+    [
+     "H",
+     "4. How reccos works"
+    ],
+    [
+     "P",
+     "**4.1** reccos lets you record places you’ve been, react to them (Loved, Fine or Didn’t Like) and rank them against each other."
+    ],
+    [
+     "P",
+     "**4.2** **Scores.** We calculate a score for each place from where you’ve ranked it in your list. A calculated score can change as you add, move or remove places. You can adjust your score for any place. Whether calculated or adjusted, a score shown against your name is your opinion of the place, not ours. We may change how we calculate scores at any time, which may change the scores shown."
+    ],
+    [
+     "P",
+     "**4.3** **Combined scores.** Some scores, such as the Locals score, combine reccos from many accounts that meet our eligibility rules. They are not a review by reccos. We set the eligibility rules and methods for combined scores, and may change them at any time."
+    ],
+    [
+     "P",
+     "**4.4** **Recommendations and search.** Features such as Find, Picks and Ask reccos suggest places using factors such as the people you follow, reccos from creators and other users, how closely your taste matches theirs, distance, opening hours and what you asked for. These are some of the main factors, not a complete list, and we may change how we rank results at any time. We may also feature, highlight or order places and content as we choose."
+    ],
+    [
+     "P",
+     "**4.5** **AI features.** Ask reccos uses a third-party AI provider to understand your request. Results and summaries are generated automatically from information on reccos and may be incomplete or wrong. Check anything important with the venue."
+    ],
+    [
+     "H",
+     "5. Your content"
+    ],
+    [
+     "P",
+     "**5.1** **Your Content** means anything you add to the Service, including your reccos, rankings, scores, reactions, dishes, notes, Want to try list, profile details and photo."
+    ],
+    [
+     "P",
+     "**5.2** You own Your Content."
+    ],
+    [
+     "P",
+     "**5.3** You grant us a non-exclusive, worldwide, royalty-free, transferable and sublicensable licence to host, store, reproduce, adapt (for example by resizing, reformatting or translating), display, publish, distribute and communicate Your Content, and to combine it with other content, in any media, to operate, improve, develop and promote the Service. This includes:"
+    ],
+    [
+     "L",
+     "showing Your Content on your profile and web profile, in other users’ feeds, search results and recommendations, and in share cards you create;"
+    ],
+    [
+     "L",
+     "using it to calculate combined scores, taste matches and recommendations; and"
+    ],
+    [
+     "L",
+     "showing your public reccos, with your username, in marketing for reccos."
+    ],
+    [
+     "P",
+     "We may let others, including our service providers, exercise this licence for us."
+    ],
+    [
+     "P",
+     "**5.4** **What’s public.** Your profile, reccos, rankings, scores, reactions, dishes, follows and Want to try list are public. Anyone can see them in the app and on the web, and search engines may index your web profile. Your notes are private to you. Don’t put anything in a public field that you don’t want others to see. We may change which parts of the Service are public. If a change would make something you added as private visible to others, we will tell you first."
+    ],
+    [
+     "P",
+     "**5.5** The licence in clause 5.3 lasts while Your Content is on the Service. If you delete Your Content or your account, we will remove it from public view within a reasonable time. However:"
+    ],
+    [
+     "L",
+     "copies may remain in backups for a limited time;"
+    ],
+    [
+     "L",
+     "combined scores and other de-identified information derived from it may remain;"
+    ],
+    [
+     "L",
+     "marketing materials that already use it may stay in use; and"
+    ],
+    [
+     "L",
+     "we can’t recall share cards or links you have already shared outside reccos."
+    ],
+    [
+     "P",
+     "**5.6** You are responsible for Your Content. You confirm that you have the right to post it and that it complies with these Terms."
+    ],
+    [
+     "H",
+     "6. Rules for using reccos"
+    ],
+    [
+     "P",
+     "**6.1** You must follow the Community Guidelines."
+    ],
+    [
+     "P",
+     "**6.2** **Honest reccos.** Only recommend or rank places you have actually been to, and give your genuine opinion."
+    ],
+    [
+     "P",
+     "**6.3** **Disclose commercial ties.** If a venue or brand paid you, invited you, gave you something for free or otherwise rewarded you in connection with a place, you must disclose it where the Service gives you a way to do so."
+    ],
+    [
+     "P",
+     "**6.4** You must not:"
+    ],
+    [
+     "L",
+     "(a) recommend or rank a venue you own, work for or have a financial interest in, or a competitor of one;"
+    ],
+    [
+     "L",
+     "(b) post fake, bought or coordinated reccos, or try to manipulate scores, rankings or search results;"
+    ],
+    [
+     "L",
+     "(c) impersonate anyone, or misrepresent your connection with a person, creator, venue or brand;"
+    ],
+    [
+     "L",
+     "(d) post anything that is unlawful, defamatory, misleading, harassing, hateful or sexually explicit, or that infringes anyone’s rights, including privacy and intellectual property rights;"
+    ],
+    [
+     "L",
+     "(e) post personal information about anyone else, including venue staff, without their consent;"
+    ],
+    [
+     "L",
+     "(f) scrape, copy or harvest data from the Service, or access it with bots or other automated tools, except as we permit in writing;"
+    ],
+    [
+     "L",
+     "(g) interfere with or disrupt the Service, its security or other users;"
+    ],
+    [
+     "L",
+     "(h) reverse engineer, decompile or copy the app, except as the law allows;"
+    ],
+    [
+     "L",
+     "(i) use the Service for spam, or for advertising or other commercial purposes we haven’t approved; or"
+    ],
+    [
+     "L",
+     "(j) help or encourage anyone else to do any of these things, or use the Service in any other way we reasonably consider harmful to reccos, its users, creators or venues."
+    ],
+    [
+     "H",
+     "7. Content from creators and others"
+    ],
+    [
+     "P",
+     "**7.1** Some content on reccos comes from creators and other third parties, including creators’ TikTok videos, which play through TikTok’s embedded player. That content belongs to its owners. You may view it through the Service, but you must not download, copy or reuse it except as its owner or the relevant platform allows."
+    ],
+    [
+     "P",
+     "**7.2** Some creator profiles are prepared by reccos from the creator’s public posts, with the creator’s permission, and may be labelled as prepared by reccos. They reflect our reading of the creator’s posts and may not match the creator’s own view until the creator has reviewed them."
+    ],
+    [
+     "P",
+     "**7.3** Labels such as “paid”, “invited” or “gifted” are based on creators’ own disclosures and on platforms’ advertising flags. We don’t independently verify every commercial relationship."
+    ],
+    [
+     "P",
+     "**7.4** Summaries of creator reviews are written by reccos, sometimes with the help of AI, and may be labelled as ours. They are paraphrases, not quotes."
+    ],
+    [
+     "P",
+     "**7.5** We are not responsible for, and don’t endorse, content from creators or other third parties."
+    ],
+    [
+     "H",
+     "8. Venue information"
+    ],
+    [
+     "P",
+     "**8.1** Information about venues, including opening hours, prices, price tiers, menus, dietary tags, travel times and photos, comes from venues, creators, users, public sources and our own estimates. It is a guide only and may be out of date or wrong."
+    ],
+    [
+     "P",
+     "**8.2** Unless a creator or venue has stated a price, price tiers are estimates. The app explains what each tier means, and we may change the tiers."
+    ],
+    [
+     "P",
+     "**8.3** Dietary and other tags, such as halal or vegetarian, reflect what a venue, creator or user has said. They are not a certification. If you have an allergy or dietary requirement, check directly with the venue before you order."
+    ],
+    [
+     "P",
+     "**8.4** Venue photos are supplied by venues, or taken from creators’ content with their permission and usually credited to them."
+    ],
+    [
+     "P",
+     "**8.5** reccos is not affiliated with any venue unless we say so, and we don’t supply the food, drink or service at any venue. Your dealings with a venue are between you and the venue."
+    ],
+    [
+     "P",
+     "**8.6** If you see wrong venue information, please report it in the app."
+    ],
+    [
+     "H",
+     "9. Location and maps"
+    ],
+    [
+     "P",
+     "**9.1** If you allow it, we use your device’s location to show places near you and to estimate travel times. You can turn this off in your device settings, but some features won’t work without it."
+    ],
+    [
+     "P",
+     "**9.2** Maps use OpenStreetMap data, © OpenStreetMap contributors. Travel times are estimates. Don’t rely on the Service for navigation or safety."
+    ],
+    [
+     "H",
+     "10. Following, blocking and reporting"
+    ],
+    [
+     "P",
+     "**10.1** You can follow other users and creators. Who you follow is public."
+    ],
+    [
+     "P",
+     "**10.2** You can block another user. Blocking may remove follows between you and limit how you see each other on reccos."
+    ],
+    [
+     "P",
+     "**10.3** You can report a user, a recco, a video or wrong venue information in the app, or by emailing [contact email]."
+    ],
+    [
+     "P",
+     "**10.4** If you believe content on reccos is defamatory, infringes your rights or is otherwise unlawful, email [contact email] with the content, where it appears and why you object. We will review it and may remove or restrict it, but we don’t have to unless the law requires it."
+    ],
+    [
+     "H",
+     "11. Moderation and enforcement"
+    ],
+    [
+     "P",
+     "**11.1** We may review, refuse, remove or restrict any content, and suspend or close any account, if we reasonably believe it breaches these Terms or the law, infringes anyone’s rights, or puts users, creators, venues or reccos at risk."
+    ],
+    [
+     "P",
+     "**11.2** Where reasonable, we’ll tell you what we have done and why. You can ask us to review a decision by emailing [contact email]."
+    ],
+    [
+     "P",
+     "**11.3** We don’t monitor all content and aren’t obliged to."
+    ],
+    [
+     "P",
+     "**11.4** We may also close any account for any reason by giving you reasonable notice."
+    ],
+    [
+     "P",
+     "**11.5** We may limit or remove features, set limits on activity (such as the number of reccos, follows or searches), and use automated tools to detect misuse."
+    ],
+    [
+     "H",
+     "12. Feedback"
+    ],
+    [
+     "P",
+     "**12.1** If you give us feedback or suggestions, we may use them without restriction and without paying you."
+    ],
+    [
+     "H",
+     "13. Third-party services"
+    ],
+    [
+     "P",
+     "**13.1** The Service relies on third-party services, including Apple (sign-in and the App Store), TikTok (embedded videos), Instagram, OpenStreetMap and a third-party AI provider. Your use of those services may be subject to their own terms and privacy policies. We are not responsible for third-party services."
+    ],
+    [
+     "H",
+     "14. Our intellectual property"
+    ],
+    [
+     "P",
+     "**14.1** We or our licensors own the Service, including the app, its software and design, the reccos name and logos, and content we create."
+    ],
+    [
+     "P",
+     "**14.2** We grant you a personal, non-exclusive, non-transferable, revocable licence to use the app on devices you own or control, for your own non-commercial use, in line with these Terms."
+    ],
+    [
+     "P",
+     "**14.3** You must not use our name or logos without our written permission."
+    ],
+    [
+     "H",
+     "15. Changes"
+    ],
+    [
+     "P",
+     "**15.1** We may change, add or remove features of the Service, and may suspend or stop the Service in whole or in part. Where reasonable, we will give you notice of a material change that affects you."
+    ],
+    [
+     "P",
+     "**15.2** We may update these Terms from time to time, for example because of a change in the law, a new feature or a change to how we run the Service. If a change is material, we will give you reasonable notice in the app or by email before it takes effect. If you don’t agree, you can stop using the Service and delete your account. If you keep using the Service after the change takes effect, the updated Terms apply."
+    ],
+    [
+     "P",
+     "**15.3** Features we label as beta, preview or test are provided as is. They may change or be withdrawn at any time and may not work as expected."
+    ],
+    [
+     "H",
+     "16. Fees"
+    ],
+    [
+     "P",
+     "**16.1** The Service is currently free. If we introduce paid features, we will tell you the price and any extra terms before you buy, and you won’t be charged unless you agree."
+    ],
+    [
+     "H",
+     "17. Consumer law, disclaimers and liability"
+    ],
+    [
+     "P",
+     "**17.1** Nothing in these Terms excludes, restricts or modifies any right, remedy, guarantee, warranty or other term that the Australian Consumer Law or any other law gives you and that cannot lawfully be excluded or limited (**Non-excludable Rights**)."
+    ],
+    [
+     "P",
+     "**17.2** Subject to your Non-excludable Rights, the Service is provided “as is” and “as available”. We don’t promise that the Service will be uninterrupted, error-free or secure, or that any content, score, recommendation or venue information is accurate, complete or current."
+    ],
+    [
+     "P",
+     "**17.3** Subject to your Non-excludable Rights, we are not liable for:"
+    ],
+    [
+     "L",
+     "(a) your visit to a venue, or any food, drink or service a venue supplies, including any illness or allergic reaction;"
+    ],
+    [
+     "L",
+     "(b) content posted by users, creators or other third parties;"
+    ],
+    [
+     "L",
+     "(c) third-party services;"
+    ],
+    [
+     "L",
+     "(d) any decision you make based on scores, recommendations, AI results or venue information;"
+    ],
+    [
+     "L",
+     "(e) any failure or delay caused by something outside our reasonable control; or"
+    ],
+    [
+     "L",
+     "(f) any indirect or consequential loss, or any loss of profit, revenue, data or opportunity."
+    ],
+    [
+     "P",
+     "**17.4** Where the law allows us to limit our liability for breach of a Non-excludable Right, our liability is limited, at our option, to supplying the services again or paying the cost of having them supplied again."
+    ],
+    [
+     "P",
+     "**17.5** Subject to clauses 17.1 and 17.4, our total liability to you for all claims connected with the Service or these Terms is limited to A$100."
+    ],
+    [
+     "H",
+     "18. Ending your account"
+    ],
+    [
+     "P",
+     "**18.1** You can delete your account at any time in the app’s settings."
+    ],
+    [
+     "P",
+     "**18.2** When you delete your account, we delete or de-identify your profile, reccos, notes and photo within a reasonable time, except:"
+    ],
+    [
+     "L",
+     "(a) information we need to keep by law, or to resolve disputes or enforce these Terms;"
+    ],
+    [
+     "L",
+     "(b) copies in backups, which are deleted in the normal course;"
+    ],
+    [
+     "L",
+     "(c) de-identified or combined information, such as Locals scores; and"
+    ],
+    [
+     "L",
+     "(d) anything you have already shared outside reccos."
+    ],
+    [
+     "P",
+     "**18.3** We may suspend or close your account under clause 11, if we stop offering the Service, or, after giving you notice, if your account has been inactive for 24 months."
+    ],
+    [
+     "P",
+     "**18.4** Clauses 5.5, 12, 14, 17, 18, 19 and 20, and clauses 23.2, 26.4, 28, 31 and 32 of Part B, survive the end of your account."
+    ],
+    [
+     "H",
+     "19. Disputes and governing law"
+    ],
+    [
+     "P",
+     "**19.1** If you have a problem with the Service, please email [contact email] first so we can try to resolve it informally."
+    ],
+    [
+     "P",
+     "**19.2** These Terms are governed by the laws of Victoria, Australia. You and we submit to the non-exclusive jurisdiction of the courts of Victoria and the courts that can hear appeals from them."
+    ],
+    [
+     "P",
+     "**19.3** Nothing in this clause limits your Non-excludable Rights."
+    ],
+    [
+     "H",
+     "20. General"
+    ],
+    [
+     "P",
+     "**20.1** **Notices.** We may give you notices in the app, or by email to the address linked to your account, including an Apple private relay address. You can contact us at [contact email]."
+    ],
+    [
+     "P",
+     "**20.2** **Transfer.** You can’t transfer your rights under these Terms. We may transfer or novate our rights and obligations to any entity that operates the Service, including a company we set up to run it. We will tell you if we do."
+    ],
+    [
+     "P",
+     "**20.3** **Severance.** If any part of these Terms is invalid or unenforceable, it is read down to the extent necessary, or severed, and the rest continues to apply."
+    ],
+    [
+     "P",
+     "**20.4** **No waiver.** If we don’t enforce a right straight away, we can still enforce it later."
+    ],
+    [
+     "P",
+     "**20.5** **Entire agreement.** These Terms are the entire agreement between you and us about the Service."
+    ],
+    [
+     "H",
+     "21. Apple"
+    ],
+    [
+     "P",
+     "**21.1** If you downloaded the app from the Apple App Store, Apple’s standard Licensed Application End User License Agreement also applies to your use of the app. Apple is not a party to these Terms and is not responsible for the Service or its content."
+    ],
+    [
+     "PART",
+     "Part B: Creator Terms"
+    ],
+    [
+     "H",
+     "22. When this Part applies"
+    ],
+    [
+     "P",
+     "**22.1** This Part applies to you if you are a Creator. You are a **Creator** if:"
+    ],
+    [
+     "L",
+     "(a) you claim, verify or otherwise take control of a creator profile on reccos; or"
+    ],
+    [
+     "L",
+     "(b) you accept these Terms after we have prepared a creator profile from your content with your permission."
+    ],
+    [
+     "P",
+     "**22.2** If neither applies to you, this Part has no effect for you."
+    ],
+    [
+     "P",
+     "**22.3** If a company, agency or manager controls your creator accounts or your content, you confirm that you are authorised to accept this Part for them as well as for yourself, and this Part binds them too."
+    ],
+    [
+     "H",
+     "23. Your creator profile"
+    ],
+    [
+     "P",
+     "**23.1** With your permission, we may prepare a creator profile from your public content. To do this, we may:"
+    ],
+    [
+     "L",
+     "(a) download, store and review your public videos, photo posts and captions;"
+    ],
+    [
+     "L",
+     "(b) transcribe them and read any on-screen text, including with automated and AI tools;"
+    ],
+    [
+     "L",
+     "(c) identify the places you feature, decide whether you Loved them, found them Fine or Didn’t Like them, and rank them;"
+    ],
+    [
+     "L",
+     "(d) keep private notes about your posts, such as any scores and commercial disclosures; and"
+    ],
+    [
+     "L",
+     "(e) set up the profile with your handle, display name, profile photo, follower count, a short description and a verified badge."
+    ],
+    [
+     "P",
+     "**23.2** If we prepared your creator profile before you accepted these Terms, you confirm that you gave us permission to do so, and that the licence and consents in this Part apply to everything we did before you accepted, as well as to what we do afterwards."
+    ],
+    [
+     "P",
+     "**23.3** We choose which of your posts to use. Our reactions and rankings are our reading of your posts, and you can change them under clause 25."
+    ],
+    [
+     "H",
+     "24. Claiming and verification"
+    ],
+    [
+     "P",
+     "**24.1** We may send you a personal link to claim your creator profile. Don’t share it."
+    ],
+    [
+     "P",
+     "**24.2** We may verify that a creator account is yours, for example by checking the handle and follower count on the platform you name. A verified badge means we have confirmed the account is yours. It is not an endorsement of your views by reccos, and it does not mean you endorse reccos beyond what this Part says."
+    ],
+    [
+     "H",
+     "25. Your control"
+    ],
+    [
+     "P",
+     "**25.1** You can reorder, rescore, add or remove any of your reccos at any time."
+    ],
+    [
+     "P",
+     "**25.2** You can ask us to remove any of your Creator Content from the Service, including a video, a photo taken from your content, a quote or a summary, by emailing [contact email]. We will remove it from the Service within a reasonable time, subject to clause 31.3."
+    ],
+    [
+     "H",
+     "26. Licence of your Creator Content"
+    ],
+    [
+     "P",
+     "**26.1** **Creator Content** means content you create and publish, on reccos or on another platform such as TikTok or Instagram, that we use in connection with your creator profile. It includes videos, photo posts, captions, spoken words, on-screen text, frames and stills, and your name, handle, profile photo, voice, likeness and follower count."
+    ],
+    [
+     "P",
+     "**26.2** You grant us a non-exclusive, worldwide, royalty-free, transferable and sublicensable licence to use, reproduce, adapt, edit, publish, display and communicate to the public your Creator Content, in any media now known or later developed, to operate, improve, develop and promote the Service, including to:"
+    ],
+    [
+     "L",
+     "(a) analyse it, including with automated and AI tools, to build and update your reccos and creator profile, and to develop and improve the Service;"
+    ],
+    [
+     "L",
+     "(b) embed and play it on the Service using a platform’s embedded player;"
+    ],
+    [
+     "L",
+     "(c) host and play copies of it on the Service;"
+    ],
+    [
+     "L",
+     "(d) take stills from it and edit them, including by cropping, colour-correcting and enhancing, for use as photos of venues, credited to you;"
+    ],
+    [
+     "L",
+     "(e) quote, excerpt and paraphrase it, including in summaries, attributed to you;"
+    ],
+    [
+     "L",
+     "(f) display it alongside reccos scores, labels and other features;"
+    ],
+    [
+     "L",
+     "(g) show it on your profile, your web profile and share cards; and"
+    ],
+    [
+     "L",
+     "(h) use it, including your name, handle, likeness and voice, in marketing and promotion of reccos in any media, including app stores, social media, advertising and product videos."
+    ],
+    [
+     "P",
+     "**26.3** We may let others, including our service providers and anyone who takes over the Service, exercise this licence for us, and may grant the platforms where we publish marketing the rights they need to display it."
+    ],
+    [
+     "P",
+     "**26.4** The licence starts when you first give us permission, including before you accepted these Terms (see clause 23.2), and is irrevocable except as clause 31 provides. It continues while your Creator Content is on the Service, and afterwards for the uses that clause 31.3 preserves."
+    ],
+    [
+     "P",
+     "**26.5** The licence covers only what you own or control. We won’t use music or other third-party audio from your posts outside a platform’s embedded player unless you confirm you have the rights to it."
+    ],
+    [
+     "H",
+     "27. Your rights in your content"
+    ],
+    [
+     "P",
+     "**27.1** You keep ownership of your Creator Content. This Part gives us a licence and does not transfer ownership."
+    ],
+    [
+     "H",
+     "28. Moral rights"
+    ],
+    [
+     "P",
+     "**28.1** To the extent permitted by law, you consent to us, and anyone we authorise, doing any of the following in relation to your Creator Content, whether created before or after you accept these Terms, even if it would otherwise infringe your moral rights:"
+    ],
+    [
+     "L",
+     "(a) cropping, trimming, resizing, reformatting or re-ordering it;"
+    ],
+    [
+     "L",
+     "(b) taking stills from it and colour-correcting, enhancing or upscaling them;"
+    ],
+    [
+     "L",
+     "(c) removing, muting or replacing its audio;"
+    ],
+    [
+     "L",
+     "(d) adding captions, labels, scores, stickers, overlays or other interface elements;"
+    ],
+    [
+     "L",
+     "(e) quoting, excerpting or paraphrasing it;"
+    ],
+    [
+     "L",
+     "(f) presenting it alongside reactions, rankings and summaries prepared by reccos;"
+    ],
+    [
+     "L",
+     "(g) combining it with other content in marketing and promotion; and"
+    ],
+    [
+     "L",
+     "(h) attributing it to you by your handle or display name, or not attributing it where attribution isn’t reasonably practicable, such as in a short marketing clip."
+    ],
+    [
+     "H",
+     "29. Labels, disclosures and your obligations"
+    ],
+    [
+     "P",
+     "**29.1** Your reccos are attributed to you. A creator profile we prepared may be labelled as prepared by reccos until you claim it. Summaries we write may be labelled as ours."
+    ],
+    [
+     "P",
+     "**29.2** We label reccos as paid, invited or gifted based on your own disclosures and on platforms’ advertising flags. These labels may affect how we rank results."
+    ],
+    [
+     "P",
+     "**29.3** You must:"
+    ],
+    [
+     "L",
+     "(a) keep your reccos honest;"
+    ],
+    [
+     "L",
+     "(b) disclose any commercial relationship with a venue or brand connected with a recco, and keep those disclosures up to date; and"
+    ],
+    [
+     "L",
+     "(c) comply with the laws and codes that apply to advertising and influencer disclosure, including the Australian Consumer Law and the AANA Code of Ethics."
+    ],
+    [
+     "P",
+     "**29.4** If we ever give you a benefit for promoting reccos, you must disclose it in your posts."
+    ],
+    [
+     "H",
+     "30. No payment"
+    ],
+    [
+     "P",
+     "**30.1** Unless we agree otherwise in writing, we don’t pay you for your Creator Content or the licence in this Part, and you don’t pay us. You don’t have to post on reccos."
+    ],
+    [
+     "H",
+     "31. If you stop being a Creator"
+    ],
+    [
+     "P",
+     "**31.1** You can stop being a Creator by closing your creator account, or by emailing [contact email]."
+    ],
+    [
+     "P",
+     "**31.2** We will then remove your creator profile and Creator Content from the Service, including your reccos, videos, summaries and the venue photos taken from your content."
+    ],
+    [
+     "P",
+     "**31.3** This does not affect:"
+    ],
+    [
+     "L",
+     "(a) marketing materials published or produced before then, which we may keep using;"
+    ],
+    [
+     "L",
+     "(b) de-identified or combined information, such as Locals scores;"
+    ],
+    [
+     "L",
+     "(c) copies in backups, which are deleted in the normal course; or"
+    ],
+    [
+     "L",
+     "(d) anything already shared outside reccos."
+    ],
+    [
+     "H",
+     "32. Warranties and liability"
+    ],
+    [
+     "P",
+     "**32.1** You warrant that:"
+    ],
+    [
+     "L",
+     "(a) you own or control the rights in your Creator Content needed to grant the licence and consents in this Part (except third-party audio covered by clause 26.5), including under any agreement with a brand, agency or manager;"
+    ],
+    [
+     "L",
+     "(b) our use of your Creator Content as this Part permits will not infringe anyone’s rights; and"
+    ],
+    [
+     "L",
+     "(c) you have authority to accept this Part."
+    ],
+    [
+     "P",
+     "**32.2** We warrant that we will use your Creator Content only as this Part permits."
+    ],
+    [
+     "P",
+     "**32.3** Clause 17 applies to this Part. Subject to Non-excludable Rights, our total liability to you in connection with this Part is limited to A$100. Your liability for breaching clause 32.1 is not limited."
+    ]
+   ]
+  },
+  "privacy": {
+   "title": "Privacy Policy",
+   "x": [
+    [
+     "H",
+     "1. About this policy"
+    ],
+    [
+     "P",
+     "**1.1** This policy explains how reccos (**we**, **us** or **our**) collects, uses, shares and protects personal information when you use the reccos app, our website and web profiles (the **Service**)."
+    ],
+    [
+     "P",
+     "**1.2** We handle personal information in line with the Australian Privacy Principles in the *Privacy Act 1988* (Cth)."
+    ],
+    [
+     "P",
+     "**1.3** Read this policy with our Terms of Use. Words defined in the Terms of Use have the same meaning here."
+    ],
+    [
+     "H",
+     "2. What we collect"
+    ],
+    [
+     "P",
+     "**2.1** **Account information.** When you sign in with Apple, we receive an Apple identifier and, if you choose to share them, your name and email address. Your email may be an Apple private relay address. We also collect your username, display name, profile photo, any social media handles you give us, and confirmation that you are 18 or over."
+    ],
+    [
+     "P",
+     "**2.2** **Your content and activity.** Your reccos, rankings, scores, reactions, dishes, notes, Want to try list, follows, blocks and reports."
+    ],
+    [
+     "P",
+     "**2.3** **Location.** If you allow it, your device’s location, which we use to show places near you and estimate travel times."
+    ],
+    [
+     "P",
+     "**2.4** **Searches.** What you search for, including requests you type into Ask reccos."
+    ],
+    [
+     "P",
+     "**2.5** **Usage information.** How you use the Service, such as the places and profiles you view, the videos you play, what you share and who invited you. We also collect device and technical information, such as your device model, operating system, app version, IP address and log data."
+    ],
+    [
+     "P",
+     "**2.6** **Communications.** Messages you send us, including reports, complaints and feedback."
+    ],
+    [
+     "P",
+     "**2.7** **Creators.** If you are a Creator, we also collect information from your public social media profiles and posts, with your permission: your handle, display name, profile photo, follower count, videos, photo posts and captions, transcripts of your videos, and notes we make about your posts, such as your scores and commercial disclosures."
+    ],
+    [
+     "P",
+     "**2.8** **Information about other people.** If you mention other people in your content, we may collect information about them. Only do this if you have their permission."
+    ],
+    [
+     "P",
+     "**2.9** **Sensitive information.** We don’t ask for sensitive information, such as your health or religious beliefs. Some of your searches or reccos, for example for halal or vegetarian food, might suggest something about you. By using those features, you consent to us using that information to provide and personalise the Service."
+    ],
+    [
+     "P",
+     "**2.10** We don’t collect payment details, because the Service is currently free."
+    ],
+    [
+     "P",
+     "**2.11** We collect information directly from you, automatically when you use the Service, and from third parties such as Apple, social media platforms and our service providers."
+    ],
+    [
+     "H",
+     "3. How we use it"
+    ],
+    [
+     "P",
+     "**3.1** We use personal information to:"
+    ],
+    [
+     "L",
+     "(a) provide the Service, including your profile, reccos and web profile;"
+    ],
+    [
+     "L",
+     "(b) calculate scores, combined scores such as Locals scores, taste matches, Picks and search results;"
+    ],
+    [
+     "L",
+     "(c) show your public content to other users;"
+    ],
+    [
+     "L",
+     "(d) prepare, verify and manage creator profiles;"
+    ],
+    [
+     "L",
+     "(e) keep the Service safe, moderate content, handle reports and complaints, and enforce our Terms;"
+    ],
+    [
+     "L",
+     "(f) respond to you and provide support;"
+    ],
+    [
+     "L",
+     "(g) understand how the Service is used, and improve and develop it, including with automated and AI tools;"
+    ],
+    [
+     "L",
+     "(h) promote the Service, including by showing public content in our marketing;"
+    ],
+    [
+     "L",
+     "(i) send you messages about the Service, such as changes to our Terms;"
+    ],
+    [
+     "L",
+     "(j) comply with the law; and"
+    ],
+    [
+     "L",
+     "(k) any other purpose we tell you about when we collect the information, or that you would reasonably expect."
+    ],
+    [
+     "P",
+     "**3.2** We may send you marketing messages about reccos where the law allows, and you can unsubscribe at any time."
+    ],
+    [
+     "H",
+     "4. Ask reccos and AI"
+    ],
+    [
+     "P",
+     "**4.1** When you use Ask reccos, the text of your request is sent to a third-party AI provider, which works out what you are looking for. The provider processes it on our behalf. Please don’t include personal information in your requests."
+    ],
+    [
+     "P",
+     "**4.2** If you are a Creator, we may also use automated and AI tools to transcribe and analyse your content, as described in our Terms of Use."
+    ],
+    [
+     "H",
+     "5. Who we share it with"
+    ],
+    [
+     "P",
+     "**5.1** We share personal information with:"
+    ],
+    [
+     "L",
+     "(a) **other users and the public**, for your public profile and content (see section 7);"
+    ],
+    [
+     "L",
+     "(b) **service providers** who help us run the Service, such as hosting, database, storage and analytics providers, and our AI provider;"
+    ],
+    [
+     "L",
+     "(c) **Apple**, to let you sign in;"
+    ],
+    [
+     "L",
+     "(d) **TikTok**, when you play an embedded video: the player loads from TikTok, which may collect information about you under its own privacy policy;"
+    ],
+    [
+     "L",
+     "(e) **map providers**, when your device loads map tiles;"
+    ],
+    [
+     "L",
+     "(f) our professional advisers;"
+    ],
+    [
+     "L",
+     "(g) police, regulators, courts or others, where the law requires or permits it;"
+    ],
+    [
+     "L",
+     "(h) anyone who takes over the Service, including a company we set up to run it, who must handle your information in line with this policy; and"
+    ],
+    [
+     "L",
+     "(i) **venues, partners and others**, but only in de-identified or aggregated form that doesn’t identify you."
+    ],
+    [
+     "H",
+     "6. Overseas disclosure"
+    ],
+    [
+     "P",
+     "**6.1** Our main database and file storage are currently hosted in Australia. Some of our service providers, including our AI provider, may store or process personal information outside Australia, including in [countries]. We take reasonable steps to make sure they handle it in line with the Australian Privacy Principles."
+    ],
+    [
+     "H",
+     "7. What’s public"
+    ],
+    [
+     "P",
+     "**7.1** Your profile, reccos, rankings, scores, reactions, dishes, follows and Want to try list are public. Anyone can see them in the app and on your web profile, and search engines may index your web profile. Your notes are private to you. We may change which parts of the Service are public, and will tell you first if a change would make something you added as private visible to others."
+    ],
+    [
+     "H",
+     "8. Creators"
+    ],
+    [
+     "P",
+     "**8.1** If you are a Creator, we collect information from your public social media profiles and posts with your permission, as described in section 2.7 and our Terms of Use. Your creator profile, reccos, and the content we use under the Terms of Use are public. The notes we make about your posts are private to reccos."
+    ],
+    [
+     "H",
+     "9. How long we keep it"
+    ],
+    [
+     "P",
+     "**9.1** We keep personal information for as long as we need it for the purposes in this policy, or as the law requires. When you delete your account, we delete or de-identify your personal information, except where we need to keep it by law, to resolve disputes or to enforce our Terms. Copies in backups are deleted in the normal course."
+    ],
+    [
+     "H",
+     "10. Security"
+    ],
+    [
+     "P",
+     "**10.1** We take reasonable steps to protect personal information from misuse, interference, loss, and unauthorised access, change or disclosure. No system is completely secure, so we can’t guarantee the security of your information."
+    ],
+    [
+     "H",
+     "11. Your choices and rights"
+    ],
+    [
+     "P",
+     "**11.1** You can change your profile, delete your content or delete your account in the app."
+    ],
+    [
+     "P",
+     "**11.2** You can turn off location access in your device settings."
+    ],
+    [
+     "P",
+     "**11.3** You can ask for access to, or correction of, the personal information we hold about you by emailing [contact email]. We may need to confirm your identity first."
+    ],
+    [
+     "H",
+     "12. Children"
+    ],
+    [
+     "P",
+     "**12.1** The Service is for people aged 18 and over. If we learn that we hold personal information about someone under 18, we will take reasonable steps to delete it."
+    ],
+    [
+     "H",
+     "13. Complaints"
+    ],
+    [
+     "P",
+     "**13.1** If you have a concern about how we handle your personal information, email [contact email]. We will look into it and respond."
+    ],
+    [
+     "P",
+     "**13.2** If you are not satisfied with our response, you can complain to the Office of the Australian Information Commissioner at [oaic.gov.au](https://www.oaic.gov.au)."
+    ],
+    [
+     "H",
+     "14. Changes to this policy"
+    ],
+    [
+     "P",
+     "**14.1** We may update this policy. If we make a material change, we will tell you in the app or by email before it takes effect."
+    ],
+    [
+     "H",
+     "15. Contact us"
+    ],
+    [
+     "P",
+     "**15.1** Email [contact email]."
+    ]
+   ]
+  },
+  "guide": {
+   "title": "Community Guidelines",
+   "x": [
+    [
+     "I",
+     "reccos works because people trust each other’s reccos. These guidelines are part of our Terms of Use. They give examples, not a complete list. We may act on anything we reasonably think harms reccos or the people who use it."
+    ],
+    [
+     "H",
+     "Be honest"
+    ],
+    [
+     "B",
+     "Only recco places you’ve actually been to."
+    ],
+    [
+     "B",
+     "Give your real opinion. Loved, Fine and Didn’t Like are all fair game."
+    ],
+    [
+     "B",
+     "Don’t recco or rank a venue you own, work for or have a stake in, or a competitor of one."
+    ],
+    [
+     "B",
+     "Don’t buy, sell, swap or coordinate reccos, and don’t use extra accounts to push a place up or down."
+    ],
+    [
+     "H",
+     "Say when you got something"
+    ],
+    [
+     "B",
+     "Getting something free doesn’t change the rules: rank it honestly, and say so wherever reccos gives you the option."
+    ],
+    [
+     "H",
+     "Be respectful"
+    ],
+    [
+     "B",
+     "Talk about the food, drink, service and place, not people’s looks, background or private lives."
+    ],
+    [
+     "B",
+     "Don’t name or single out venue staff in a negative way."
+    ],
+    [
+     "B",
+     "No harassment, threats, hate or bullying, including towards creators, venues and other users."
+    ],
+    [
+     "H",
+     "Keep it clean and legal"
+    ],
+    [
+     "B",
+     "No sexually explicit, violent or illegal content."
+    ],
+    [
+     "B",
+     "Don’t post other people’s personal information."
+    ],
+    [
+     "B",
+     "Don’t post content you don’t have the rights to, such as other people’s photos or videos."
+    ],
+    [
+     "B",
+     "Stick to your own experience, and don’t make claims about a venue you can’t back up, such as about food safety or hygiene."
+    ],
+    [
+     "H",
+     "Be yourself"
+    ],
+    [
+     "B",
+     "Don’t pretend to be someone else, or a creator, venue or brand."
+    ],
+    [
+     "B",
+     "No spam, ads or promotions we haven’t approved."
+    ],
+    [
+     "H",
+     "Reporting and what happens next"
+    ],
+    [
+     "B",
+     "Report a user, a recco, a video or wrong venue details in the app, or email [contact email]."
+    ],
+    [
+     "B",
+     "We review reports, and may also act without one. We may remove content, limit features, or suspend or close accounts that break these guidelines."
+    ],
+    [
+     "B",
+     "If we act on your content or account, you can ask us to review the decision by emailing [contact email]."
+    ],
+    [
+     "T",
+     "We may update these guidelines at any time."
+    ]
+   ]
+  }
+ }
+}
