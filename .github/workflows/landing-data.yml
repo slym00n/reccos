@@ -1,4 +1,4 @@
-# Keeps the landing page live: every hour it rebuilds site/ from reccos' public data (scripts/site/build.py) and
+# Keeps the landing page live: every hour it rebuilds site/ from reccos' public data (scripts/site/build.py), and
 # commits only when the page actually changed. A failed or empty read fails the run and leaves the last good page.
 name: Landing page data
 
