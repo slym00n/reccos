@@ -191,10 +191,10 @@ FAQ = [
     ('Is it only Melbourne?', 'For now, yes. reccos is starting with Melbourne and the people who review its food.'),
     ('Is there an Android app?', 'Not yet. reccos is iPhone only for now.'),
     ('How do scores work?', 'Every recco starts as Loved it, It was fine or Didn’t like it, and a couple of quick head\u2011to\u2011heads place it among the others in your list. That gives it a score out of 10: 8 and up is loved, 5 to 7.9 is fine, and under 5 you didn’t like it. A place’s Locals score brings together everyone who’s recommended it.'),
-    ('Who can see my reccos?', 'Your reccos sit on your profile, so anyone you send your link to can open your list, and people can follow you in the app. The <a href="/privacy">Privacy Policy</a> has the details.'),
+    ('Who can see my reccos?', 'Your reccos sit on your profile, so anyone you send your link to can open your list, and people can follow you in the app. The <a href="privacy/">Privacy Policy</a> has the details.'),
     ('Where do the foodies’ reccos come from?', 'From their own TikTok reviews. reccos turns their reviews into a list, with their score, what to order and the video a tap away. New reviews land within a couple of days of posting.'),
     ('I make food videos. How do I claim my reccos?', 'Email us at [contact email]. If your list is ready, we’ll send you a link to check it in a few head\u2011to\u2011heads and get the tick.'),
-    ('How do I get in touch?', 'Email [contact email]. We read everything.'),
+    ('How do I get in touch?', 'Email [contact email]. We read everything. Account questions, like how to delete yours, are answered in <a href="support/">Help</a>.'),
 ]
 
 def header():
@@ -438,7 +438,7 @@ def closing():
             '<p>Find where Melbourne’s foodies eat, then recommend your own.</p></div>'
             '<a class="tix" href="#get" data-loop aria-label="Get the app, free on iPhone"><span class="tix-in"><span class="tix-k">Free on iPhone</span><span class="tix-r"><span class="tix-h">Get the app</span><span class="tix-go">%s</span></span></span></a>'
             '</section>'
-            '<footer class="ft"><div class="w"><span class="ft-l"><a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="/guidelines">Guidelines</a></span></div></footer>') % (wm(label=''), ARROW)
+            '<footer class="ft"><div class="w"><span class="ft-l"><a href="terms/">Terms</a> · <a href="privacy/">Privacy</a> · <a href="guidelines/">Guidelines</a></span></div></footer>') % (wm(label=''), ARROW)
 
 def overlays():
     eyes = ''
@@ -479,8 +479,8 @@ def site_page():
             '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
             '<title>%s</title>\n<meta name="description" content="%s">\n<meta name="robots" content="noindex">\n'
             '<meta name="theme-color" content="#0B0C1E">\n<meta name="color-scheme" content="dark">\n'
-            '<link rel="icon" href="../favicon.svg" type="image/svg+xml">\n<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">\n'
-            '<link rel="apple-touch-icon" href="../apple-touch-icon.png">\n'
+            '<link rel="icon" href="favicon.svg" type="image/svg+xml">\n<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">\n'
+            '<link rel="apple-touch-icon" href="apple-touch-icon.png">\n'
             '<meta property="og:type" content="website">\n<meta property="og:title" content="reccos">\n<meta property="og:description" content="%s">\n'
             '<meta property="og:image" content="https://slym00n.github.io/reccos/og.png">\n<meta name="twitter:card" content="summary_large_image">\n'
             '<style>\nhtml,body{margin:0;padding:0;background:#0B0C1E}\n%s\n</style>\n</head>\n<body>\n%s\n'
@@ -522,6 +522,12 @@ def build_site():
     with open(os.path.join(ROOT, 'site', 'data.json'), 'w', encoding='utf-8') as f:
         json.dump(shown(), f, ensure_ascii=False, indent=1, sort_keys=True)
         f.write('\n')
+    import docs, shutil
+    updated = docs.build_all(sys.modules[__name__], ROOT)
+    # The site carries its own icons, so it works the same here and at the root of its own domain.
+    for f in ('favicon.svg', 'favicon-32.png', 'apple-touch-icon.png'):
+        shutil.copyfile(os.path.join(ROOT, f), os.path.join(ROOT, 'site', f))
+    print('Terms, Privacy, Guidelines and Help: %s' % updated)
     print('site/index.html: %d bytes; %d foodies, %d reviews, %d places; Just opened %d of %d'
           % (len(page), FACTS['foodies'], FACTS['reviews'], FACTS['places'], len(TICKETS), TOTAL_OPEN))
 

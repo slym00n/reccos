@@ -1,0 +1,104 @@
+/* ---------- document pages: Terms, Privacy, Guidelines, Help (the app's legal reader, at reading width) ---------- */
+.hd-sp{flex:1}
+.hd .prog{position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--slate);transform:scaleX(var(--p,0));transform-origin:0 50%;opacity:0;transition:opacity 220ms linear}
+.rc.scrolled .hd .prog{opacity:1}
+.doc{padding-top:64px}
+.doc-h{max-width:760px}
+.doc-k{font-size:15px;line-height:20px;font-weight:600;color:var(--slate)}
+.doc-t{margin-top:10px;font-size:clamp(40px,4.6cqi,60px);line-height:1.02;letter-spacing:-.032em;font-weight:700}
+.doc-u{margin-top:14px;font-size:15px;line-height:20px;color:var(--slate)}
+.doc-lead{margin-top:24px;font-size:19px;line-height:30px;color:var(--ink);max-width:36em;text-wrap:pretty}
+.doc-g{margin-top:64px;display:grid;grid-template-columns:248px minmax(0,700px);gap:80px;align-items:start}
+
+/* Contents: a column that stays beside the text on wide screens, a fold-out on small ones */
+.toc{position:sticky;top:104px;max-height:calc(100vh - 128px);overflow:auto;overscroll-behavior:contain;padding-bottom:16px;scrollbar-width:none}
+.toc::-webkit-scrollbar{display:none}
+.toc-k{font-size:13px;line-height:18px;font-weight:600;color:var(--slate);margin-bottom:10px}
+.toc ol,.toc-s ol{list-style:none;margin:0;padding:0}
+.toc li a,.toc-s li a{display:flex;gap:10px;padding:6px 0 6px 14px;margin-left:-14px;font-size:15px;line-height:20px;color:var(--mut);border-radius:10px;transition:color 220ms var(--snap),background 220ms var(--snap)}
+.toc li a .n,.toc-s li a .n{min-width:20px;color:var(--slate);font-variant-numeric:tabular-nums}
+.toc li a:hover{color:var(--ink)}
+.toc li a.on{color:var(--ink);background:var(--n900)}
+.toc li.tp,.toc-s li.tp{margin-top:18px}
+.toc li.tp:first-child,.toc-s li.tp:first-child{margin-top:0}
+.toc li.tp a,.toc-s li.tp a{font-size:13px;line-height:18px;font-weight:600;color:var(--slate);padding-top:4px;padding-bottom:4px}
+.toc-s{display:none;margin-top:36px;border-radius:16px;background:var(--n800);overflow:hidden}
+.toc-s summary{list-style:none;display:flex;align-items:center;gap:8px;min-height:52px;padding:0 16px;cursor:pointer;font-size:16px;line-height:20px}
+.toc-s summary::-webkit-details-marker{display:none}
+.toc-s summary b{font-weight:600}
+.toc-s summary span{color:var(--mut);font-size:15px}
+.toc-s summary i{margin-left:auto;display:grid;transform:rotate(90deg);transition:transform 320ms var(--bounce)}
+.toc-s summary i svg{width:20px;height:20px}
+.toc-s[open] summary i{transform:rotate(-90deg)}
+.toc-s ol{padding:4px 16px 12px}
+.toc-s li a{margin-left:0;padding-left:0}
+
+/* The text */
+.doc-a{min-width:0}
+.part{margin-top:72px}
+.part:first-child{margin-top:0}
+.part-k{font-size:13px;line-height:18px;font-weight:600;color:var(--slate)}
+.part-t{margin-top:4px;font-size:28px;line-height:34px;letter-spacing:-.5px;font-weight:700}
+.sec{margin-top:44px}
+.part+.sec{margin-top:28px}
+.doc-a>.sec:first-child,.help-c+.sec{margin-top:0}
+.sec-h{display:flex;gap:12px;font-size:21px;line-height:27px;letter-spacing:-.3px;font-weight:600}
+.sec-h .n{color:var(--slate);font-variant-numeric:tabular-nums;min-width:24px}
+.sec p{margin-top:14px;font-size:17px;line-height:28px;color:var(--mut);text-wrap:pretty}
+.sec .cn{color:var(--slate);font-weight:600;font-variant-numeric:tabular-nums;margin-right:.5em}
+.sec b{color:var(--ink);font-weight:600}
+.dl{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.dl li{display:flex;gap:10px;font-size:17px;line-height:28px;color:var(--mut)}
+.dl .lab{min-width:30px;color:var(--slate);font-variant-numeric:tabular-nums;flex:none}
+.dl .dot{width:5px;height:5px;border-radius:50%;background:var(--slate);flex:none;margin:12px 6px 0 2px}
+.tail{margin-top:40px;font-size:16px;line-height:25px;color:var(--mut)}
+.doc a.lk{color:var(--ink);font-weight:500;text-decoration:underline;text-decoration-color:var(--n600);text-decoration-thickness:1.5px;text-underline-offset:3px;transition:text-decoration-color 220ms var(--snap)}
+.doc a.lk:hover{text-decoration-color:var(--ink)}
+/* A clause you jumped to says so for a moment, then settles */
+.sec :target,.sec:target .sec-h,.sec .jumped,.sec.jumped .sec-h{border-radius:10px;animation:tgt 1600ms var(--glide) both}
+@keyframes tgt{0%,35%{background:var(--n800);box-shadow:0 0 0 8px var(--n800)}100%{background:transparent;box-shadow:0 0 0 8px transparent}}
+.rm .sec :target,.rm .sec:target .sec-h,.rm .sec .jumped,.rm .sec.jumped .sec-h{animation:none}
+
+/* Help: the way to reach us, first */
+.help-c{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:28px 28px 28px 32px;border-radius:28px;background:var(--n900);margin-bottom:48px}
+.help-k{font-size:15px;line-height:20px;color:var(--mut)}
+.help-m{margin-top:4px;font-size:24px;line-height:30px;font-weight:600;letter-spacing:-.3px}
+
+/* The end: the other documents, then back to the top */
+.also{margin-top:80px}
+.also-k{font-size:13px;line-height:18px;font-weight:600;color:var(--slate);margin-bottom:12px}
+.also-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.also-g a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 18px 0 20px;border-radius:16px;background:var(--n900);font-size:17px;line-height:22px;font-weight:500;transition:background 220ms var(--snap),transform 320ms var(--bounce)}
+.also-g a:hover{background:var(--n800)}
+.also-g a:active{transform:scale(.97);transition-duration:110ms}
+.also-g .chev{width:20px;height:20px;flex:none}
+.totop{display:inline-block;margin-top:28px;padding:10px 0;font-size:15px;line-height:20px;color:var(--mut)}
+.totop:hover{color:var(--ink)}
+.doc-page .ft{margin-top:96px}
+
+@container pg (max-width:1000px){
+  .doc{padding-top:44px}
+  .doc-g{grid-template-columns:minmax(0,1fr);margin-top:40px;gap:0}
+  .toc{display:none}
+  .toc-s{display:block}
+  .doc-a{max-width:700px}
+  .also-g{grid-template-columns:minmax(0,1fr)}
+}
+@container pg (max-width:700px){
+  .doc{padding-top:28px}
+  .doc-t{font-size:clamp(34px,10cqi,44px)}
+  .doc-lead{font-size:17px;line-height:27px;margin-top:18px}
+  .doc-g{margin-top:28px}
+  .toc-s{margin-top:24px}
+  .part{margin-top:56px}
+  .part-t{font-size:22px;line-height:28px}
+  .sec{margin-top:36px}
+  .sec-h{font-size:18px;line-height:24px;gap:10px}
+  .sec p,.dl li{font-size:16px;line-height:26px}
+  .dl .dot{margin-top:11px}
+  .help-c{padding:22px;border-radius:24px;margin-bottom:36px}
+  .help-c .light{width:100%}
+  .help-m{font-size:20px;line-height:26px}
+  .also{margin-top:64px}
+  .doc-page .ft{margin-top:72px}
+}
