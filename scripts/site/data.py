@@ -138,7 +138,7 @@ def _by_opening_key(o, today):
 
 
 def tickets(D):
-    """Every live opening as a ticket, then the rail's pick of them, as Find shows to someone with no reccos yet."""
+    """Every live opening as a ticket, then the rail's pick of them, as Discover shows to someone with no reccos yet."""
     today = date.fromisoformat(D['today'])
     out = []
     for o in D['opened']:

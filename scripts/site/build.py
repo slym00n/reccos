@@ -139,7 +139,7 @@ def prepare(data):
         tabs = (n.get('restaurants', 0), n.get('cafes', 0), n.get('bars', 0), n.get('pubs', 0), s['category'])
         CREW.append((c['handle'], e(c['name']), fl_short(c['followers']), e(c['focus']), tabs, rows, tiles))
 
-    # Find's cards: reviews, followers and top 3 (restaurants, or their biggest category).
+    # Discover's cards: reviews, followers and top 3 (restaurants, or their biggest category).
     CREATORS = []
     for h in CONTENT['cards']:
         c = cr.get(h)
@@ -148,7 +148,7 @@ def prepare(data):
         top = [(V[t['venue']]['name'], t['score'], cat) for t in c['top'][cat][:3]]
         CREATORS.append((h, c['tint'] % 6, c['reviews'], fl_short(c['followers']), top))
 
-    # Just opened: the rail Find shows today, by the app's rules.
+    # Just opened: the rail Discover shows today, by the app's rules.
     rail, TOTAL_OPEN = live.tickets(D)
     TICKETS = []
     for t in rail:
@@ -200,7 +200,7 @@ FAQ = [
 def header():
     return ('<header class="hd"><div class="w">'
             '<a class="brand" href="#top" aria-label="reccos, back to the top">%s</a>'
-            '<nav class="nav" aria-label="On this page"><a href="#find">Find reccos</a><a href="#mine">My reccos</a><span class="nav-sep" aria-hidden="true"></span><a href="#creators">For creators</a><a href="#faq">Q&amp;A</a></nav>'
+            '<nav class="nav" aria-label="On this page"><a href="#discover">Discover reccos</a><a href="#mine">My reccos</a><span class="nav-sep" aria-hidden="true"></span><a href="#creators">For creators</a><a href="#faq">Q&amp;A</a></nav>'
             '<a class="gta" href="#get"><span class="chip" aria-hidden="true">%s%s</span>Get the app</a>'
             '</div></header>') % (wm(label='reccos'), mk('rx-fine-s', 'eo'), mk('rx-loved', 'eh'))
 
@@ -262,7 +262,7 @@ def ctabs(items):
             ('<span class="ul" style="background:%s"></span>' % hue) if on else '')
     return out + '</div>'
 
-def find():
+def discover():
     cards = ''
     for i, (h, a, n, fl, top) in enumerate(CREATORS):
         tilt = ['-6deg', '4deg', '-3deg', '5deg', '-4deg', '3deg'][i % 6]
@@ -270,8 +270,8 @@ def find():
         cards += ('<a class="cc" href="#get" style="--ac:%s;--i:%d;--t:%s" aria-label="@%s, %d reviews, %s followers on TikTok. Open their reccos">'
                   '%s<div class="cc-in"><div class="cc-h"><img src="%s" alt=""><div class="t"><div class="hn">@%s %s</div><div class="fl">%d reviews · %s on TikTok</div></div>%s</div>'
                   '<div class="cc-l">%s</div></div></a>') % (ACC[a], i, tilt, h, n, fl, mk('lm-' + top[0][2], 'wmk'), avatar(h), h, VER(), n, fl, CHEV, rows)
-    return ('<section class="act w" id="find">'
-            '<div class="ahead rv"><div class="lock" role="img" aria-label="find reccos"><span class="lw" aria-hidden="true">find</span><wbr>%s</div>'
+    return ('<section class="act w" id="discover">'
+            '<div class="ahead rv"><div class="lock" role="img" aria-label="discover reccos"><span class="lw" aria-hidden="true">discover</span><wbr>%s</div>'
             '<h2 class="h2">Follow the foodies you trust.</h2>'
             '<p class="lede">Their reviews become one list you can filter and map, with Locals scores beside them and the video a tap away. New reviews land within a couple of days of posting.</p></div>'
             '<div class="cards" data-io>%s</div>'
@@ -435,7 +435,7 @@ def faq():
 
 def closing():
     return ('<section class="end w rv"><div><div class="lock" role="img" aria-label="make your own reccos"><span class="lw" aria-hidden="true">make your own</span><wbr>%s</div>'
-            '<p>Find where Melbourne’s foodies eat, then recommend your own.</p></div>'
+            '<p>Discover where Melbourne’s foodies eat, then recommend your own.</p></div>'
             '<a class="tix" href="#get" data-loop aria-label="Get the app, free on iPhone"><span class="tix-in"><span class="tix-k">Free on iPhone</span><span class="tix-r"><span class="tix-h">Get the app</span><span class="tix-go">%s</span></span></span></a>'
             '</section>'
             '<footer class="ft"><div class="w"><span class="ft-l"><a href="terms/">Terms</a> · <a href="privacy/">Privacy</a> · <a href="guidelines/">Guidelines</a></span></div></footer>') % (wm(label=''), ARROW)
@@ -462,7 +462,7 @@ def body(site=False):
     start = '<div class="rc"><script>document.currentScript.parentNode.classList.add("js")</script>' if site else '<div class="rc" ref="{{ rootRef }}">'
     return ('%s<div class="defs" aria-hidden="true"><svg width="0" height="0">%s</svg></div>'
             '<div class="pg">%s<main>%s%s%s%s%s%s</main></div>%s</div>') % (
-        start, DEFS, header(), hero(), find(), mine(), creators(), faq(), closing(), overlays())
+        start, DEFS, header(), hero(), discover(), mine(), creators(), faq(), closing(), overlays())
 
 def canvas_page(w, h, title):
     """A board for the design canvas (its runtime runs the Component)."""

@@ -710,3 +710,5 @@ svg.mk{display:block;flex:none;overflow:visible}
   .film{padding:16px}
   .film-p{aspect-ratio:9/16;width:min(420px,100%);max-height:calc(100% - 20px)}
 }
+/* On phones both act lockups sit at 34px, as in the app: "discover reccos" is long enough to wrap at the old 46px. */
+@container pg (max-width:520px){.lock{--h:34px}}
